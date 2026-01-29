@@ -1,0 +1,30 @@
+[
+  {
+    "senderID": "100088877141336",
+    "recipientID": "100079815110529",
+    "pokemon": {
+      "id": 380,
+      "name": "latias",
+      "shiny": true,
+      "caughtAt": "2025-05-08T08:00:00.681Z",
+      "coins": 153,
+      "exp": 117
+    },
+    "coins": 0,
+    "timestamp": "2025-05-08T08:37:49.018Z"
+  },
+  {
+    "senderID": "100079815110529",
+    "recipientID": "100088877141336",
+    "pokemon": {
+      "id": 380,
+      "name": "latias",
+      "shiny": true,
+      "caughtAt": "2025-05-08T08:00:00.681Z",
+      "coins": 153,
+      "exp": 117
+    },
+    "coins": 0,
+    "timestamp": "2025-05-08T08:39:47.019Z"
+  }
+]

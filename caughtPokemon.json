@@ -1,0 +1,2675 @@
+{
+  "100079815110529": [
+    {
+      "id": 585,
+      "name": "deerling",
+      "shiny": false,
+      "caughtAt": "2025-05-03T11:24:37.225Z"
+    },
+    {
+      "id": 577,
+      "name": "solosis",
+      "shiny": false,
+      "caughtAt": "2025-05-03T11:39:32.163Z"
+    },
+    {
+      "id": 718,
+      "name": "zygarde-50",
+      "shiny": false,
+      "caughtAt": "2025-05-03T11:50:09.041Z",
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 959,
+      "name": "tinkaton",
+      "shiny": false,
+      "caughtAt": "2025-05-03T12:02:59.520Z"
+    },
+    {
+      "id": 10205,
+      "name": "eevee-gmax",
+      "shiny": false,
+      "caughtAt": "2025-05-03T12:07:21.940Z",
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 882,
+      "name": "dracovish",
+      "shiny": false,
+      "caughtAt": "2025-05-03T12:07:34.413Z"
+    },
+    {
+      "id": 378,
+      "name": "regice",
+      "shiny": false,
+      "caughtAt": "2025-05-03T12:11:20.380Z",
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10024,
+      "name": "keldeo-resolute",
+      "shiny": false,
+      "caughtAt": "2025-05-03T13:45:12.189Z",
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 486,
+      "name": "regigigas",
+      "shiny": false,
+      "caughtAt": "2025-05-03T13:47:45.922Z"
+    },
+    {
+      "id": 554,
+      "name": "darumaka",
+      "shiny": false,
+      "caughtAt": "2025-05-04T08:31:19.400Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 708,
+      "name": "phantump",
+      "shiny": false,
+      "caughtAt": "2025-05-04T08:34:19.737Z",
+      "coins": 151,
+      "exp": 117
+    },
+    {
+      "id": 217,
+      "name": "ursaring",
+      "shiny": false,
+      "caughtAt": "2025-05-04T08:55:11.065Z",
+      "coins": 85,
+      "exp": 65
+    },
+    {
+      "id": 602,
+      "name": "tynamo",
+      "shiny": false,
+      "caughtAt": "2025-05-04T09:02:54.046Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 998,
+      "name": "baxcalibur",
+      "shiny": false,
+      "caughtAt": "2025-05-04T09:13:43.813Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 859,
+      "name": "impidimp",
+      "shiny": false,
+      "caughtAt": "2025-05-04T09:25:52.661Z",
+      "coins": 184,
+      "exp": 143
+    },
+    {
+      "id": 686,
+      "name": "inkay",
+      "shiny": false,
+      "caughtAt": "2025-05-04T11:21:25.763Z",
+      "coins": 151,
+      "exp": 117
+    },
+    {
+      "id": 811,
+      "name": "thwackey",
+      "shiny": false,
+      "caughtAt": "2025-05-04T11:48:55.933Z",
+      "coins": 184,
+      "exp": 143
+    },
+    {
+      "id": 529,
+      "name": "drilbur",
+      "shiny": false,
+      "caughtAt": "2025-05-04T12:15:25.597Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 949,
+      "name": "toedscruel",
+      "shiny": false,
+      "caughtAt": "2025-05-04T12:26:06.259Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 263,
+      "name": "zigzagoon",
+      "shiny": false,
+      "caughtAt": "2025-05-04T12:37:10.316Z",
+      "coins": 102,
+      "exp": 78
+    },
+    {
+      "id": 328,
+      "name": "trapinch",
+      "shiny": false,
+      "caughtAt": "2025-05-04T12:43:42.284Z",
+      "coins": 102,
+      "exp": 78
+    },
+    {
+      "id": 558,
+      "name": "crustle",
+      "shiny": false,
+      "caughtAt": "2025-05-04T13:03:44.181Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 647,
+      "name": "keldeo-ordinary",
+      "shiny": false,
+      "caughtAt": "2025-05-04T14:17:32.375Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 849,
+      "name": "toxtricity-amped",
+      "shiny": false,
+      "caughtAt": "2025-05-04T09:08:18.235Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 896,
+      "name": "glastrier",
+      "shiny": false,
+      "caughtAt": "2025-05-04T15:06:36.670Z",
+      "coins": 184,
+      "exp": 143
+    },
+    {
+      "id": 921,
+      "name": "pawmi",
+      "shiny": false,
+      "caughtAt": "2025-05-04T15:42:29.804Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 484,
+      "name": "palkia",
+      "shiny": false,
+      "caughtAt": "2025-05-04T15:48:59.661Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 941,
+      "name": "kilowattrel",
+      "shiny": false,
+      "caughtAt": "2025-05-04T15:56:26.348Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 974,
+      "name": "cetoddle",
+      "shiny": false,
+      "caughtAt": "2025-05-04T16:03:18.001Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 75,
+      "name": "graveler",
+      "shiny": false,
+      "caughtAt": "2025-05-04T16:20:12.808Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 976,
+      "name": "veluza",
+      "shiny": false,
+      "caughtAt": "2025-05-04T16:49:54.991Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 618,
+      "name": "stunfisk",
+      "shiny": false,
+      "caughtAt": "2025-05-04T16:58:47.633Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 993,
+      "name": "iron-jugulis",
+      "shiny": false,
+      "caughtAt": "2025-05-04T17:20:37.506Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 442,
+      "name": "spiritomb",
+      "shiny": false,
+      "caughtAt": "2025-05-04T19:35:08.775Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 1007,
+      "name": "koraidon",
+      "shiny": false,
+      "caughtAt": "2025-05-04T20:15:52.786Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 268,
+      "name": "cascoon",
+      "shiny": false,
+      "caughtAt": "2025-05-04T20:40:25.822Z",
+      "coins": 102,
+      "exp": 78
+    },
+    {
+      "id": 10027,
+      "name": "pumpkaboo-small",
+      "shiny": false,
+      "caughtAt": "2025-05-04T20:48:44.294Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 438,
+      "name": "bonsly",
+      "shiny": false,
+      "caughtAt": "2025-05-05T09:05:00.942Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 481,
+      "name": "mesprit",
+      "shiny": false,
+      "caughtAt": "2025-05-05T09:20:26.251Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 10237,
+      "name": "lilligant-hisui",
+      "shiny": false,
+      "caughtAt": "2025-05-05T09:47:28.959Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 400,
+      "name": "bibarel",
+      "shiny": false,
+      "caughtAt": "2025-05-05T10:13:32.876Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 843,
+      "name": "silicobra",
+      "shiny": false,
+      "caughtAt": "2025-05-05T14:30:15.703Z",
+      "coins": 184,
+      "exp": 143
+    },
+    {
+      "id": 266,
+      "name": "silcoon",
+      "shiny": false,
+      "caughtAt": "2025-05-05T14:50:49.725Z",
+      "coins": 102,
+      "exp": 78
+    },
+    {
+      "id": 591,
+      "name": "amoonguss",
+      "shiny": false,
+      "caughtAt": "2025-05-05T14:56:12.877Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 759,
+      "name": "stufful",
+      "shiny": false,
+      "caughtAt": "2025-05-05T16:22:22.632Z",
+      "coins": 168,
+      "exp": 130
+    },
+    {
+      "id": 10100,
+      "name": "raichu-alola",
+      "shiny": false,
+      "caughtAt": "2025-05-05T16:30:15.220Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 830,
+      "name": "eldegoss",
+      "shiny": false,
+      "caughtAt": "2025-05-05T16:35:52.476Z",
+      "coins": 184,
+      "exp": 143
+    },
+    {
+      "id": 55,
+      "name": "golduck",
+      "shiny": false,
+      "caughtAt": "2025-05-05T16:42:22.321Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 787,
+      "name": "tapu-bulu",
+      "shiny": false,
+      "caughtAt": "2025-05-05T16:52:45.097Z",
+      "coins": 168,
+      "exp": 130,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 522,
+      "name": "blitzle",
+      "shiny": false,
+      "caughtAt": "2025-05-05T17:00:42.861Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 386,
+      "name": "deoxys",
+      "shiny": false,
+      "caughtAt": "2025-05-05T17:06:49.483Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 414,
+      "name": "mothim",
+      "shiny": false,
+      "caughtAt": "2025-05-05T17:12:55.046Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 10212,
+      "name": "corviknight-gmax",
+      "shiny": false,
+      "caughtAt": "2025-05-05T17:18:12.988Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 444,
+      "name": "gabite",
+      "shiny": false,
+      "caughtAt": "2025-05-06T09:34:29.651Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 631,
+      "name": "heatmor",
+      "shiny": false,
+      "caughtAt": "2025-05-06T10:00:47.399Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 517,
+      "name": "munna",
+      "shiny": false,
+      "caughtAt": "2025-05-06T10:07:45.355Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 119,
+      "name": "seaking",
+      "shiny": false,
+      "caughtAt": "2025-05-06T10:25:04.298Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 879,
+      "name": "copperajah",
+      "shiny": false,
+      "caughtAt": "2025-05-07T08:22:11.905Z",
+      "coins": 184,
+      "exp": 143
+    },
+    {
+      "id": 10245,
+      "name": "dialga-origin",
+      "shiny": false,
+      "caughtAt": "2025-05-07T09:18:31.347Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10091,
+      "name": "rattata-alola",
+      "shiny": false,
+      "caughtAt": "2025-05-07T09:28:23.415Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 934,
+      "name": "garganacl",
+      "shiny": false,
+      "caughtAt": "2025-05-07T10:14:36.775Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 781,
+      "name": "dhelmise",
+      "shiny": false,
+      "caughtAt": "2025-05-07T10:23:52.257Z",
+      "coins": 168,
+      "exp": 130
+    },
+    {
+      "id": 737,
+      "name": "charjabug",
+      "shiny": false,
+      "caughtAt": "2025-05-07T10:33:09.379Z",
+      "coins": 168,
+      "exp": 130
+    },
+    {
+      "id": 667,
+      "name": "litleo",
+      "shiny": false,
+      "caughtAt": "2025-05-07T10:46:15.824Z",
+      "coins": 151,
+      "exp": 117
+    },
+    {
+      "id": 771,
+      "name": "pyukumuku",
+      "shiny": false,
+      "caughtAt": "2025-05-07T10:51:27.700Z",
+      "coins": 168,
+      "exp": 130
+    },
+    {
+      "id": 953,
+      "name": "rellor",
+      "shiny": false,
+      "caughtAt": "2025-05-07T11:13:07.279Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 505,
+      "name": "watchog",
+      "shiny": false,
+      "caughtAt": "2025-05-07T11:17:38.202Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 204,
+      "name": "pineco",
+      "shiny": false,
+      "caughtAt": "2025-05-07T11:21:53.290Z",
+      "coins": 85,
+      "exp": 65
+    },
+    {
+      "id": 109,
+      "name": "koffing",
+      "shiny": false,
+      "caughtAt": "2025-05-07T12:02:50.742Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 756,
+      "name": "shiinotic",
+      "shiny": false,
+      "caughtAt": "2025-05-07T14:29:52.893Z",
+      "coins": 168,
+      "exp": 130
+    },
+    {
+      "id": 10214,
+      "name": "drednaw-gmax",
+      "shiny": false,
+      "caughtAt": "2025-05-07T14:36:45.036Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 41,
+      "name": "zubat",
+      "shiny": false,
+      "caughtAt": "2025-05-07T14:49:28.676Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 724,
+      "name": "decidueye",
+      "shiny": false,
+      "caughtAt": "2025-05-07T15:05:48.617Z",
+      "coins": 168,
+      "exp": 130
+    },
+    {
+      "id": 1011,
+      "name": "dipplin",
+      "shiny": false,
+      "caughtAt": "2025-05-07T15:25:30.109Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 440,
+      "name": "happiny",
+      "shiny": false,
+      "caughtAt": "2025-05-07T15:32:26.549Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 557,
+      "name": "dwebble",
+      "shiny": false,
+      "caughtAt": "2025-05-07T15:41:26.826Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 967,
+      "name": "cyclizar",
+      "shiny": false,
+      "caughtAt": "2025-05-07T15:46:11.100Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 507,
+      "name": "herdier",
+      "shiny": false,
+      "caughtAt": "2025-05-07T15:54:42.881Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 970,
+      "name": "glimmora",
+      "shiny": false,
+      "caughtAt": "2025-05-07T17:49:50.880Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 431,
+      "name": "glameow",
+      "shiny": false,
+      "caughtAt": "2025-05-07T18:56:23.001Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 10150,
+      "name": "ribombee",
+      "shiny": false,
+      "caughtAt": "2025-05-07T19:07:05.085Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 884,
+      "name": "duraludon",
+      "shiny": false,
+      "caughtAt": "2025-05-07T18:44:43.497Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10050,
+      "name": "blaziken-mega",
+      "shiny": false,
+      "caughtAt": "2025-05-07T19:11:07.793Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 969,
+      "name": "glimmet",
+      "shiny": false,
+      "caughtAt": "2025-05-07T19:14:48.415Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 910,
+      "name": "crocalor",
+      "shiny": false,
+      "caughtAt": "2025-05-07T19:18:29.394Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 570,
+      "name": "zorua",
+      "shiny": false,
+      "caughtAt": "2025-05-07T19:22:31.142Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 923,
+      "name": "pawmot",
+      "shiny": false,
+      "caughtAt": "2025-05-07T19:25:58.142Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 144,
+      "name": "articuno",
+      "shiny": false,
+      "caughtAt": "2025-05-07T19:29:48.239Z",
+      "coins": 69,
+      "exp": 52,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 518,
+      "name": "musharna",
+      "shiny": false,
+      "caughtAt": "2025-05-07T19:33:14.533Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 832,
+      "name": "dubwool",
+      "shiny": false,
+      "caughtAt": "2025-05-08T04:39:17.443Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 863,
+      "name": "perrserker",
+      "shiny": false,
+      "caughtAt": "2025-05-08T04:45:01.801Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10060,
+      "name": "abomasnow-mega",
+      "shiny": false,
+      "caughtAt": "2025-05-08T04:56:34.384Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 346,
+      "name": "cradily",
+      "shiny": false,
+      "caughtAt": "2025-05-08T05:20:24.141Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 363,
+      "name": "spheal",
+      "shiny": false,
+      "caughtAt": "2025-05-08T05:25:46.152Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 268,
+      "name": "cascoon",
+      "shiny": false,
+      "caughtAt": "2025-05-08T05:42:26.691Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 661,
+      "name": "fletchling",
+      "shiny": false,
+      "caughtAt": "2025-05-08T05:49:24.057Z",
+      "coins": 151,
+      "exp": 117,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 922,
+      "name": "pawmo",
+      "shiny": false,
+      "caughtAt": "2025-05-08T05:55:54.141Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 1013,
+      "name": "sinistcha",
+      "shiny": false,
+      "caughtAt": "2025-05-08T06:03:24.310Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 870,
+      "name": "falinks",
+      "shiny": false,
+      "caughtAt": "2025-05-08T07:26:32.743Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10107,
+      "name": "meowth-alola",
+      "shiny": false,
+      "caughtAt": "2025-05-08T07:34:28.411Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 824,
+      "name": "blipbug",
+      "shiny": false,
+      "caughtAt": "2025-05-08T07:41:03.042Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 971,
+      "name": "greavard",
+      "shiny": false,
+      "caughtAt": "2025-05-08T07:50:34.200Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10214,
+      "name": "drednaw-gmax",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:01:58.135Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 191,
+      "name": "sunkern",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:04:56.195Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10237,
+      "name": "lilligant-hisui",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:07:25.069Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 725,
+      "name": "litten",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:10:21.736Z",
+      "coins": 168,
+      "exp": 130,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 780,
+      "name": "drampa",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:15:28.502Z",
+      "coins": 168,
+      "exp": 130,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 895,
+      "name": "regidrago",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:21:24.131Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 502,
+      "name": "dewott",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:24:48.238Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10127,
+      "name": "wishiwashi-school",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:31:36.872Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 679,
+      "name": "honedge",
+      "shiny": false,
+      "caughtAt": "2025-05-08T09:05:12.779Z",
+      "coins": 151,
+      "exp": 117,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 341,
+      "name": "corphish",
+      "shiny": false,
+      "caughtAt": "2025-05-08T09:21:29.066Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 267,
+      "name": "beautifly",
+      "shiny": false,
+      "caughtAt": "2025-05-08T09:25:25.291Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 672,
+      "name": "skiddo",
+      "shiny": false,
+      "caughtAt": "2025-05-08T09:30:53.933Z",
+      "coins": 151,
+      "exp": 117,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 275,
+      "name": "shiftry",
+      "shiny": false,
+      "caughtAt": "2025-05-08T09:34:10.602Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 719,
+      "name": "diancie",
+      "shiny": false,
+      "caughtAt": "2025-05-08T09:50:25.382Z",
+      "coins": 151,
+      "exp": 117,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 597,
+      "name": "ferroseed",
+      "shiny": false,
+      "caughtAt": "2025-05-08T10:06:59.856Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 426,
+      "name": "drifblim",
+      "shiny": false,
+      "caughtAt": "2025-05-08T10:09:37.471Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 305,
+      "name": "lairon",
+      "shiny": false,
+      "caughtAt": "2025-05-08T10:22:15.250Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10238,
+      "name": "zorua-hisui",
+      "shiny": false,
+      "caughtAt": "2025-05-08T14:42:45.471Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 253,
+      "name": "grovyle",
+      "shiny": false,
+      "caughtAt": "2025-05-08T14:54:23.733Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10229,
+      "name": "growlithe-hisui",
+      "shiny": false,
+      "caughtAt": "2025-05-08T15:37:04.051Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 207,
+      "name": "gligar",
+      "shiny": false,
+      "caughtAt": "2025-05-08T15:45:43.194Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 354,
+      "name": "banette",
+      "shiny": false,
+      "caughtAt": "2025-05-08T15:53:11.746Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 345,
+      "name": "lileep",
+      "shiny": false,
+      "caughtAt": "2025-05-08T16:00:05.417Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 476,
+      "name": "probopass",
+      "shiny": false,
+      "caughtAt": "2025-05-08T16:17:50.101Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10171,
+      "name": "moltres-galar",
+      "shiny": false,
+      "caughtAt": "2025-05-08T16:39:34.123Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 913,
+      "name": "quaxwell",
+      "shiny": false,
+      "caughtAt": "2025-05-08T16:51:17.957Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 966,
+      "name": "revavroom",
+      "shiny": false,
+      "caughtAt": "2025-05-08T17:02:30.233Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 576,
+      "name": "gothitelle",
+      "shiny": false,
+      "caughtAt": "2025-05-08T17:07:46.886Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10102,
+      "name": "sandslash-alola",
+      "shiny": false,
+      "caughtAt": "2025-05-08T18:09:01.636Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 814,
+      "name": "raboot",
+      "shiny": false,
+      "caughtAt": "2025-05-08T18:18:23.605Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 685,
+      "name": "slurpuff",
+      "shiny": false,
+      "caughtAt": "2025-05-08T19:52:53.908Z",
+      "coins": 151,
+      "exp": 117,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 764,
+      "name": "comfey",
+      "shiny": false,
+      "caughtAt": "2025-05-09T10:05:15.056Z",
+      "coins": 168,
+      "exp": 130,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 886,
+      "name": "drakloak",
+      "shiny": false,
+      "caughtAt": "2025-05-09T10:26:49.060Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 642,
+      "name": "thundurus-incarnate",
+      "shiny": false,
+      "caughtAt": "2025-05-09T10:35:51.675Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10261,
+      "name": "squawkabilly-yellow-plumage",
+      "shiny": false,
+      "caughtAt": "2025-05-09T12:01:14.651Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 999,
+      "name": "gimmighoul",
+      "shiny": false,
+      "caughtAt": "2025-05-09T12:05:07.879Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 969,
+      "name": "glimmet",
+      "shiny": false,
+      "caughtAt": "2025-05-09T13:09:00.381Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 777,
+      "name": "togedemaru",
+      "shiny": false,
+      "caughtAt": "2025-05-09T13:40:44.861Z",
+      "coins": 168,
+      "exp": 130,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 407,
+      "name": "roserade",
+      "shiny": false,
+      "caughtAt": "2025-05-09T14:08:00.421Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 5,
+      "name": "charmeleon",
+      "shiny": false,
+      "caughtAt": "2025-05-09T14:19:58.952Z",
+      "coins": 69,
+      "exp": 52,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 734,
+      "name": "yungoos",
+      "shiny": false,
+      "caughtAt": "2025-05-09T14:32:20.708Z",
+      "coins": 168,
+      "exp": 130,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 653,
+      "name": "fennekin",
+      "shiny": false,
+      "caughtAt": "2025-05-09T15:16:06.971Z",
+      "coins": 151,
+      "exp": 117,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 42,
+      "name": "golbat",
+      "shiny": false,
+      "caughtAt": "2025-05-09T16:19:13.382Z",
+      "coins": 69,
+      "exp": 52,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 266,
+      "name": "silcoon",
+      "shiny": false,
+      "caughtAt": "2025-05-09T16:24:36.633Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 527,
+      "name": "woobat",
+      "shiny": false,
+      "caughtAt": "2025-05-09T16:30:24.016Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 1004,
+      "name": "chi-yu",
+      "shiny": false,
+      "caughtAt": "2025-05-09T16:36:21.848Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 349,
+      "name": "feebas",
+      "shiny": false,
+      "caughtAt": "2025-05-09T17:28:40.099Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 453,
+      "name": "croagunk",
+      "shiny": false,
+      "caughtAt": "2025-05-09T17:33:56.933Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 10088,
+      "name": "lopunny-mega",
+      "shiny": false,
+      "caughtAt": "2025-05-09T17:42:26.004Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 451,
+      "name": "skorupi",
+      "shiny": false,
+      "caughtAt": "2025-05-09T18:12:26.517Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 989,
+      "name": "sandy-shocks",
+      "shiny": false,
+      "caughtAt": "2025-05-09T18:17:20.233Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 303,
+      "name": "mawile",
+      "shiny": false,
+      "caughtAt": "2025-05-09T18:28:59.145Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 496,
+      "name": "servine",
+      "shiny": false,
+      "caughtAt": "2025-05-09T18:40:13.333Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 607,
+      "name": "litwick",
+      "shiny": false,
+      "caughtAt": "2025-05-10T08:36:35.124Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 84,
+      "name": "doduo",
+      "shiny": false,
+      "caughtAt": "2025-05-07T20:16:36.023Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 712,
+      "name": "bergmite",
+      "shiny": false,
+      "caughtAt": "2025-05-10T14:16:08.671Z",
+      "coins": 151,
+      "exp": 117,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 533,
+      "name": "gurdurr",
+      "shiny": false,
+      "caughtAt": "2025-05-22T16:02:38.634Z",
+      "coins": 131,
+      "exp": 100,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 253,
+      "name": "grovyle",
+      "shiny": false,
+      "caughtAt": "2025-05-22T16:23:39.330Z",
+      "coins": 77,
+      "exp": 65,
+      "originalTrainer": "Meherab Badhon"
+    },
+    {
+      "id": 745,
+      "name": "lycanroc-midday",
+      "shiny": false,
+      "caughtAt": "2025-07-30T18:43:24.248Z",
+      "coins": 126,
+      "exp": 113,
+      "originalTrainer": "Meherab Badhon"
+    }
+  ],
+  "100031021522664": [
+    {
+      "id": 10165,
+      "name": "slowbro-galar",
+      "shiny": false,
+      "caughtAt": "2025-05-03T11:55:17.460Z",
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10022,
+      "name": "kyurem-black",
+      "shiny": false,
+      "caughtAt": "2025-05-03T12:09:40.157Z",
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 6,
+      "name": "charizard",
+      "shiny": true,
+      "caughtAt": "2025-05-04T08:55:11.182Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10178,
+      "name": "darmanitan-zen-galar",
+      "shiny": false,
+      "caughtAt": "2025-05-04T20:10:28.359Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 153,
+      "name": "bayleef",
+      "shiny": false,
+      "caughtAt": "2025-05-04T20:55:48.029Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10034,
+      "name": "charizard-mega-x",
+      "shiny": false,
+      "caughtAt": "2025-05-04T21:04:03.800Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10212,
+      "name": "corviknight-gmax",
+      "shiny": false,
+      "caughtAt": "2025-05-04T21:19:46.674Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 145,
+      "name": "zapdos",
+      "shiny": false,
+      "caughtAt": "2025-05-05T10:25:38.249Z",
+      "coins": 69,
+      "exp": 52,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10094,
+      "name": "pikachu-original-cap",
+      "shiny": false,
+      "caughtAt": "2025-05-05T10:50:55.210Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 569,
+      "name": "garbodor",
+      "shiny": false,
+      "caughtAt": "2025-05-05T18:20:58.670Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 493,
+      "name": "arceus",
+      "shiny": true,
+      "caughtAt": "2025-05-04T08:07:20.782Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 122,
+      "name": "mr-mime",
+      "shiny": false,
+      "caughtAt": "2025-05-06T11:22:04.113Z",
+      "coins": 69,
+      "exp": 52,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 434,
+      "name": "stunky",
+      "shiny": false,
+      "caughtAt": "2025-05-06T19:46:03.650Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10079,
+      "name": "rayquaza-mega",
+      "shiny": true,
+      "caughtAt": "2025-05-04T21:34:27.302Z",
+      "coins": 168,
+      "exp": 130,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10097,
+      "name": "pikachu-unova-cap",
+      "shiny": false,
+      "caughtAt": "2025-05-07T18:38:32.096Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 853,
+      "name": "grapploct",
+      "shiny": false,
+      "caughtAt": "2025-05-07T19:37:53.074Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10151,
+      "name": "rockruff",
+      "shiny": false,
+      "caughtAt": "2025-05-07T19:42:59.999Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 199,
+      "name": "slowking",
+      "shiny": false,
+      "caughtAt": "2025-05-08T04:13:55.137Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 992,
+      "name": "iron-hands",
+      "shiny": false,
+      "caughtAt": "2025-05-08T05:36:16.786Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 158,
+      "name": "totodile",
+      "shiny": false,
+      "caughtAt": "2025-05-08T15:06:34.294Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 942,
+      "name": "maschiff",
+      "shiny": false,
+      "caughtAt": "2025-05-08T20:04:14.675Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 436,
+      "name": "bronzor",
+      "shiny": false,
+      "caughtAt": "2025-05-08T20:20:26.652Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 853,
+      "name": "grapploct",
+      "shiny": false,
+      "caughtAt": "2025-05-09T06:44:08.768Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10188,
+      "name": "zacian-crowned",
+      "shiny": false,
+      "caughtAt": "2025-05-09T18:22:54.637Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 14,
+      "name": "kakuna",
+      "shiny": false,
+      "caughtAt": "2025-05-10T22:29:44.548Z",
+      "coins": 69,
+      "exp": 52,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10226,
+      "name": "urshifu-single-strike-gmax",
+      "shiny": false,
+      "caughtAt": "2025-05-11T08:08:00.390Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 138,
+      "name": "omanyte",
+      "shiny": false,
+      "caughtAt": "2025-05-11T13:23:31.653Z",
+      "coins": 69,
+      "exp": 52,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 690,
+      "name": "skrelp",
+      "shiny": false,
+      "caughtAt": "2025-05-11T13:44:15.570Z",
+      "coins": 151,
+      "exp": 117,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 841,
+      "name": "flapple",
+      "shiny": false,
+      "caughtAt": "2025-05-13T18:33:34.028Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 1016,
+      "name": "fezandipiti",
+      "shiny": false,
+      "caughtAt": "2025-05-15T08:02:09.094Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 464,
+      "name": "rhyperior",
+      "shiny": false,
+      "caughtAt": "2025-05-17T17:21:15.542Z",
+      "coins": 102,
+      "exp": 82,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10014,
+      "name": "castform-rainy",
+      "shiny": false,
+      "caughtAt": "2025-05-17T19:55:55.554Z",
+      "coins": 169,
+      "exp": 141,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 495,
+      "name": "snivy",
+      "shiny": false,
+      "caughtAt": "2025-05-20T10:34:18.007Z",
+      "coins": 131,
+      "exp": 103,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 629,
+      "name": "vullaby",
+      "shiny": false,
+      "caughtAt": "2025-05-20T11:35:26.902Z",
+      "coins": 97,
+      "exp": 102,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 146,
+      "name": "moltres",
+      "shiny": false,
+      "caughtAt": "2025-05-20T14:36:39.370Z",
+      "coins": 76,
+      "exp": 51,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 118,
+      "name": "goldeen",
+      "shiny": false,
+      "caughtAt": "2025-05-20T16:26:17.228Z",
+      "coins": 85,
+      "exp": 53,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 608,
+      "name": "lampent",
+      "shiny": false,
+      "caughtAt": "2025-05-20T16:29:39.362Z",
+      "coins": 119,
+      "exp": 83,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 510,
+      "name": "liepard",
+      "shiny": false,
+      "caughtAt": "2025-05-20T16:32:49.852Z",
+      "coins": 138,
+      "exp": 102,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 658,
+      "name": "greninja",
+      "shiny": false,
+      "caughtAt": "2025-05-20T16:35:19.900Z",
+      "coins": 108,
+      "exp": 99,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 668,
+      "name": "pyroar",
+      "shiny": false,
+      "caughtAt": "2025-05-20T16:39:05.891Z",
+      "coins": 106,
+      "exp": 95,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 918,
+      "name": "spidops",
+      "shiny": false,
+      "caughtAt": "2025-05-21T17:21:16.997Z",
+      "coins": 150,
+      "exp": 131,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 790,
+      "name": "cosmoem",
+      "shiny": false,
+      "caughtAt": "2025-05-21T17:33:22.964Z",
+      "coins": 137,
+      "exp": 116,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10208,
+      "name": "melmetal-gmax",
+      "shiny": false,
+      "caughtAt": "2025-05-21T17:37:56.169Z",
+      "coins": 144,
+      "exp": 121,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 709,
+      "name": "trevenant",
+      "shiny": false,
+      "caughtAt": "2025-05-21T18:01:07.221Z",
+      "coins": 138,
+      "exp": 114,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 358,
+      "name": "chimecho",
+      "shiny": false,
+      "caughtAt": "2025-05-21T18:07:38.088Z",
+      "coins": 105,
+      "exp": 76,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 239,
+      "name": "elekid",
+      "shiny": false,
+      "caughtAt": "2025-05-21T18:51:27.584Z",
+      "coins": 102,
+      "exp": 70,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10213,
+      "name": "orbeetle-gmax",
+      "shiny": false,
+      "caughtAt": "2025-05-21T18:54:04.302Z",
+      "coins": 148,
+      "exp": 120,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 704,
+      "name": "goomy",
+      "shiny": false,
+      "caughtAt": "2025-05-21T20:01:04.972Z",
+      "coins": 149,
+      "exp": 117,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 207,
+      "name": "gligar",
+      "shiny": true,
+      "caughtAt": "2025-05-22T12:35:17.972Z",
+      "coins": 148,
+      "exp": 97,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 720,
+      "name": "hoopa",
+      "shiny": false,
+      "caughtAt": "2025-05-22T15:14:24.097Z",
+      "coins": 139,
+      "exp": 118,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 445,
+      "name": "garchomp",
+      "shiny": false,
+      "caughtAt": "2025-05-22T15:58:33.910Z",
+      "coins": 90,
+      "exp": 82,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 264,
+      "name": "linoone",
+      "shiny": false,
+      "caughtAt": "2025-05-23T16:49:22.991Z",
+      "coins": 79,
+      "exp": 75,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 132,
+      "name": "ditto",
+      "shiny": false,
+      "caughtAt": "2025-05-23T16:51:49.935Z",
+      "coins": 52,
+      "exp": 69,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 453,
+      "name": "croagunk",
+      "shiny": false,
+      "caughtAt": "2025-05-28T15:08:01.785Z",
+      "coins": 93,
+      "exp": 70,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 362,
+      "name": "glalie",
+      "shiny": false,
+      "caughtAt": "2025-05-28T15:15:14.814Z",
+      "coins": 84,
+      "exp": 87,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 778,
+      "name": "mimikyu-disguised",
+      "shiny": false,
+      "caughtAt": "2025-05-28T15:20:51.015Z",
+      "coins": 151,
+      "exp": 129,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 10068,
+      "name": "gallade-mega",
+      "shiny": false,
+      "caughtAt": "2025-05-28T15:27:04.545Z",
+      "coins": 141,
+      "exp": 145,
+      "originalTrainer": "Sajid Mogged"
+    }
+  ],
+  "100088877141336": [
+    {
+      "id": 559,
+      "name": "scraggy",
+      "shiny": false,
+      "caughtAt": "2025-05-03T12:07:32.285Z"
+    },
+    {
+      "id": 378,
+      "name": "regice",
+      "shiny": false,
+      "caughtAt": "2025-05-03T12:11:20.319Z"
+    },
+    {
+      "id": 472,
+      "name": "gliscor",
+      "shiny": false,
+      "caughtAt": "2025-05-04T16:43:51.538Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 280,
+      "name": "ralts",
+      "shiny": false,
+      "caughtAt": "2025-05-05T16:12:03.563Z",
+      "coins": 102,
+      "exp": 78
+    },
+    {
+      "id": 146,
+      "name": "moltres",
+      "shiny": false,
+      "caughtAt": "2025-05-05T16:16:23.917Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 100,
+      "name": "voltorb",
+      "shiny": false,
+      "caughtAt": "2025-05-07T08:12:08.307Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 473,
+      "name": "mamoswine",
+      "shiny": false,
+      "caughtAt": "2025-05-07T10:39:51.429Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 391,
+      "name": "monferno",
+      "shiny": false,
+      "caughtAt": "2025-05-07T10:56:35.422Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 10173,
+      "name": "corsola-galar",
+      "shiny": false,
+      "caughtAt": "2025-05-07T11:01:13.789Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 10079,
+      "name": "rayquaza-mega",
+      "shiny": false,
+      "caughtAt": "2025-05-07T11:06:19.752Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 128,
+      "name": "tauros",
+      "shiny": false,
+      "caughtAt": "2025-05-07T15:16:34.461Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 34,
+      "name": "nidoking",
+      "shiny": false,
+      "caughtAt": "2025-05-07T15:50:30.698Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 270,
+      "name": "lotad",
+      "shiny": false,
+      "caughtAt": "2025-05-07T17:37:16.480Z",
+      "coins": 102,
+      "exp": 78
+    },
+    {
+      "id": 250,
+      "name": "ho-oh",
+      "shiny": false,
+      "caughtAt": "2025-05-07T18:22:58.410Z",
+      "coins": 85,
+      "exp": 65
+    },
+    {
+      "id": 10149,
+      "name": "marowak-alola",
+      "shiny": false,
+      "caughtAt": "2025-05-08T04:50:53.819Z",
+      "coins": 201,
+      "exp": 156
+    },
+    {
+      "id": 14,
+      "name": "kakuna",
+      "shiny": false,
+      "caughtAt": "2025-05-08T07:53:36.369Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 169,
+      "name": "crobat",
+      "shiny": false,
+      "caughtAt": "2025-05-08T07:57:28.583Z",
+      "coins": 85,
+      "exp": 65
+    },
+    {
+      "id": 338,
+      "name": "solrock",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:12:59.291Z",
+      "coins": 102,
+      "exp": 78
+    },
+    {
+      "id": 323,
+      "name": "camerupt",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:17:46.828Z",
+      "coins": 102,
+      "exp": 78
+    },
+    {
+      "id": 285,
+      "name": "shroomish",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:38:20.754Z",
+      "coins": 102,
+      "exp": 78
+    },
+    {
+      "id": 380,
+      "name": "latias",
+      "shiny": true,
+      "caughtAt": "2025-05-08T08:00:00.681Z",
+      "coins": 153,
+      "exp": 117,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 359,
+      "name": "absol",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:43:08.202Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 319,
+      "name": "sharpedo",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:46:48.294Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 724,
+      "name": "decidueye",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:50:04.829Z",
+      "coins": 168,
+      "exp": 130,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 38,
+      "name": "ninetales",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:59:18.810Z",
+      "coins": 69,
+      "exp": 52,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 633,
+      "name": "deino",
+      "shiny": false,
+      "caughtAt": "2025-05-08T10:01:44.748Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 335,
+      "name": "zangoose",
+      "shiny": false,
+      "caughtAt": "2025-05-08T10:04:51.306Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 62,
+      "name": "poliwrath",
+      "shiny": false,
+      "caughtAt": "2025-05-08T10:12:26.116Z",
+      "coins": 69,
+      "exp": 52,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 219,
+      "name": "magcargo",
+      "shiny": false,
+      "caughtAt": "2025-05-08T12:22:17.934Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 359,
+      "name": "absol",
+      "shiny": false,
+      "caughtAt": "2025-05-08T15:48:45.889Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 569,
+      "name": "garbodor",
+      "shiny": false,
+      "caughtAt": "2025-05-08T16:07:54.705Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 572,
+      "name": "minccino",
+      "shiny": false,
+      "caughtAt": "2025-05-08T16:56:52.471Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 384,
+      "name": "rayquaza",
+      "shiny": false,
+      "caughtAt": "2025-05-09T09:52:21.925Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 313,
+      "name": "volbeat",
+      "shiny": false,
+      "caughtAt": "2025-05-09T10:17:51.676Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 207,
+      "name": "gligar",
+      "shiny": false,
+      "caughtAt": "2025-05-09T11:47:05.519Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 390,
+      "name": "chimchar",
+      "shiny": false,
+      "caughtAt": "2025-05-09T13:24:34.439Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 454,
+      "name": "toxicroak",
+      "shiny": false,
+      "caughtAt": "2025-05-09T13:32:05.986Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 378,
+      "name": "regice",
+      "shiny": false,
+      "caughtAt": "2025-05-09T13:48:11.520Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 214,
+      "name": "heracross",
+      "shiny": false,
+      "caughtAt": "2025-05-09T13:52:11.254Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Saeed Hossain"
+    },
+    {
+      "id": 674,
+      "name": "pancham",
+      "shiny": false,
+      "caughtAt": "2025-05-10T10:46:09.270Z",
+      "coins": 151,
+      "exp": 117,
+      "originalTrainer": "Saeed Hossain"
+    }
+  ],
+  "61556406522080": [
+    {
+      "id": 539,
+      "name": "sawk",
+      "shiny": false,
+      "caughtAt": "2025-05-03T13:49:48.335Z",
+      "originalTrainer": "Tazrian Hoque"
+    },
+    {
+      "id": 446,
+      "name": "munchlax",
+      "shiny": false,
+      "caughtAt": "2025-05-03T13:50:20.830Z",
+      "originalTrainer": "Tazrian Hoque"
+    },
+    {
+      "id": 765,
+      "name": "oranguru",
+      "shiny": false,
+      "caughtAt": "2025-05-04T20:24:09.758Z",
+      "coins": 168,
+      "exp": 130,
+      "originalTrainer": "Tazrian Hoque"
+    },
+    {
+      "id": 152,
+      "name": "chikorita",
+      "shiny": false,
+      "caughtAt": "2025-05-07T18:17:11.585Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Tazrian Hoque"
+    },
+    {
+      "id": 217,
+      "name": "ursaring",
+      "shiny": false,
+      "caughtAt": "2025-05-08T15:33:38.332Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Akane Hyuga"
+    }
+  ],
+  "100069748123257": [
+    {
+      "id": 520,
+      "name": "tranquill",
+      "shiny": false,
+      "caughtAt": "2025-05-04T08:25:30.248Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 411,
+      "name": "bastiodon",
+      "shiny": false,
+      "caughtAt": "2025-05-04T12:31:45.442Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 51,
+      "name": "dugtrio",
+      "shiny": false,
+      "caughtAt": "2025-05-04T14:07:40.656Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 581,
+      "name": "swanna",
+      "shiny": false,
+      "caughtAt": "2025-05-04T16:15:02.776Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 427,
+      "name": "buneary",
+      "shiny": false,
+      "caughtAt": "2025-05-05T10:05:18.723Z",
+      "coins": 118,
+      "exp": 91
+    },
+    {
+      "id": 48,
+      "name": "venonat",
+      "shiny": false,
+      "caughtAt": "2025-05-05T17:33:25.547Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 185,
+      "name": "sudowoodo",
+      "shiny": false,
+      "caughtAt": "2025-05-07T09:54:36.587Z",
+      "coins": 85,
+      "exp": 65
+    },
+    {
+      "id": 321,
+      "name": "wailord",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:53:51.513Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Kausar A. Saif"
+    },
+    {
+      "id": 773,
+      "name": "silvally",
+      "shiny": false,
+      "caughtAt": "2025-05-08T15:40:05.282Z",
+      "coins": 168,
+      "exp": 130,
+      "originalTrainer": "Kausar A. Saif"
+    },
+    {
+      "id": 406,
+      "name": "budew",
+      "shiny": false,
+      "caughtAt": "2025-05-08T16:30:00.295Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Kausar A. Saif"
+    },
+    {
+      "id": 357,
+      "name": "tropius",
+      "shiny": false,
+      "caughtAt": "2025-05-08T16:43:50.926Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Kausar A. Saif"
+    },
+    {
+      "id": 212,
+      "name": "scizor",
+      "shiny": false,
+      "caughtAt": "2025-05-08T17:16:24.715Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Kausar A. Saif"
+    },
+    {
+      "id": 417,
+      "name": "pachirisu",
+      "shiny": false,
+      "caughtAt": "2025-05-09T06:51:45.127Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Kausar A. Saif"
+    },
+    {
+      "id": 904,
+      "name": "overqwil",
+      "shiny": false,
+      "caughtAt": "2025-05-09T07:01:57.373Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Kausar A. Saif"
+    },
+    {
+      "id": 578,
+      "name": "duosion",
+      "shiny": false,
+      "caughtAt": "2025-05-09T08:59:49.566Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Kausar A. Saif"
+    },
+    {
+      "id": 570,
+      "name": "zorua",
+      "shiny": false,
+      "caughtAt": "2025-05-09T11:39:49.921Z",
+      "coins": 135,
+      "exp": 104,
+      "originalTrainer": "Kausar A. Saif"
+    },
+    {
+      "id": 40,
+      "name": "wigglytuff",
+      "shiny": false,
+      "caughtAt": "2025-05-10T11:40:43.500Z",
+      "coins": 69,
+      "exp": 52,
+      "originalTrainer": "Kausar A. Saif"
+    },
+    {
+      "id": 842,
+      "name": "appletun",
+      "shiny": false,
+      "caughtAt": "2025-05-10T15:23:19.107Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Kausar A. Saif"
+    },
+    {
+      "id": 687,
+      "name": "malamar",
+      "shiny": false,
+      "caughtAt": "2025-05-11T07:33:24.220Z",
+      "coins": 151,
+      "exp": 117,
+      "originalTrainer": "Kausar A. Saif"
+    }
+  ],
+  "61574480692231": [
+    {
+      "id": 554,
+      "name": "darumaka",
+      "shiny": false,
+      "caughtAt": "2025-05-04T08:31:19.257Z",
+      "coins": 135,
+      "exp": 104
+    }
+  ],
+  "61554019745535": [
+    {
+      "id": 176,
+      "name": "togetic",
+      "shiny": false,
+      "caughtAt": "2025-05-05T14:19:32.496Z",
+      "coins": 85,
+      "exp": 65
+    }
+  ],
+  "61570396330447": [],
+  "100088530804374": [
+    {
+      "id": 326,
+      "name": "grumpig",
+      "shiny": false,
+      "caughtAt": "2025-05-07T18:48:09.639Z",
+      "coins": 102,
+      "exp": 78
+    },
+    {
+      "id": 69,
+      "name": "bellsprout",
+      "shiny": false,
+      "caughtAt": "2025-05-07T19:00:45.577Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 109,
+      "name": "koffing",
+      "shiny": false,
+      "caughtAt": "2025-05-05T14:42:32.384Z",
+      "coins": 69,
+      "exp": 52
+    },
+    {
+      "id": 953,
+      "name": "rellor",
+      "shiny": false,
+      "caughtAt": "2025-05-03T13:47:02.230Z"
+    },
+    {
+      "id": 386,
+      "name": "deoxys",
+      "shiny": false,
+      "caughtAt": "2025-05-04T17:05:45.388Z",
+      "coins": 102,
+      "exp": 78
+    },
+    {
+      "id": 10024,
+      "name": "keldeo-resolute",
+      "shiny": false,
+      "caughtAt": "2025-05-03T12:09:52.040Z"
+    },
+    {
+      "id": 460,
+      "name": "abomasnow",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:28:06.337Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Ahnaf Abid"
+    },
+    {
+      "id": 306,
+      "name": "aggron",
+      "shiny": false,
+      "caughtAt": "2025-05-09T13:59:47.572Z",
+      "coins": 102,
+      "exp": 78,
+      "originalTrainer": "Ahnaf Abid"
+    }
+  ],
+  "61570329532420": [
+    {
+      "id": 10087,
+      "name": "camerupt-mega",
+      "shiny": false,
+      "caughtAt": "2025-05-08T08:34:26.630Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Unknown"
+    }
+  ],
+  "100041145784186": [
+    {
+      "id": 10086,
+      "name": "hoopa-unbound",
+      "shiny": false,
+      "caughtAt": "2025-05-08T09:18:37.451Z",
+      "coins": 201,
+      "exp": 156,
+      "originalTrainer": "Shuvro Rahman"
+    },
+    {
+      "id": 391,
+      "name": "monferno",
+      "shiny": false,
+      "caughtAt": "2025-05-08T17:59:57.882Z",
+      "coins": 118,
+      "exp": 91,
+      "originalTrainer": "Shuvro Rahman"
+    }
+  ],
+  "100081238216417": [
+    {
+      "id": 613,
+      "name": "cubchoo",
+      "shiny": false,
+      "caughtAt": "2025-05-07T11:09:04.441Z",
+      "coins": 135,
+      "exp": 104
+    },
+    {
+      "id": 791,
+      "name": "solgaleo",
+      "shiny": false,
+      "caughtAt": "2025-05-08T11:09:13.772Z",
+      "coins": 168,
+      "exp": 130,
+      "originalTrainer": "Rohan Abir"
+    },
+    {
+      "id": 239,
+      "name": "elekid",
+      "shiny": false,
+      "caughtAt": "2025-05-08T13:15:10.308Z",
+      "coins": 85,
+      "exp": 65,
+      "originalTrainer": "Sajid Mogged"
+    },
+    {
+      "id": 877,
+      "name": "morpeko",
+      "shiny": false,
+      "caughtAt": "2025-05-09T14:14:22.634Z",
+      "coins": 184,
+      "exp": 143,
+      "originalTrainer": "Rohan Abir"
+    },
+    {
+      "id": 5,
+      "name": "charmeleon",
+      "shiny": false,
+      "caughtAt": "2025-05-06T09:55:19.378Z",
+      "coins": 69,
+      "exp": 52
+    }
+  ],
+  "61553554839303": [],
+  "61571491513378": [
+    {
+      "id": 52,
+      "name": "meowth",
+      "shiny": false,
+      "caughtAt": "2025-06-03T16:39:21.740Z",
+      "coins": 77,
+      "exp": 69,
+      "originalTrainer": "কামেল দস্তগীর কারাশাহ্ কালোপুরী"
+    }
+  ],
+  "100013794616509": [
+    {
+      "id": 10032,
+      "name": "gourgeist",
+      "shiny": false,
+      "caughtAt": "2025-06-03T16:45:10.718Z",
+      "coins": 156,
+      "exp": 129,
+      "originalTrainer": "Saturn Eclipse"
+    },
+    {
+      "id": 10066,
+      "name": "sableye-mega",
+      "shiny": false,
+      "caughtAt": "2025-06-03T16:51:05.713Z",
+      "coins": 162,
+      "exp": 137,
+      "originalTrainer": "Saturn Eclipse"
+    },
+    {
+      "id": 594,
+      "name": "alomomola",
+      "shiny": false,
+      "caughtAt": "2025-06-03T16:59:04.129Z",
+      "coins": 120,
+      "exp": 106,
+      "originalTrainer": "Saturn Eclipse"
+    }
+  ],
+  "100074220753602": [
+    {
+      "id": 324,
+      "name": "torkoal",
+      "shiny": false,
+      "caughtAt": "2025-07-29T17:24:24.164Z",
+      "coins": 119,
+      "exp": 62,
+      "originalTrainer": "Jalil Molla"
+    },
+    {
+      "id": 172,
+      "name": "pichu",
+      "shiny": false,
+      "caughtAt": "2025-07-29T17:27:31.021Z",
+      "coins": 89,
+      "exp": 78,
+      "originalTrainer": "Jalil Molla"
+    },
+    {
+      "id": 566,
+      "name": "archen",
+      "shiny": false,
+      "caughtAt": "2025-07-29T17:32:47.559Z",
+      "coins": 110,
+      "exp": 109,
+      "originalTrainer": "Jalil Molla"
+    },
+    {
+      "id": 10080,
+      "name": "pikachu-rock-star",
+      "shiny": false,
+      "caughtAt": "2025-07-30T18:46:54.875Z",
+      "coins": 180,
+      "exp": 142,
+      "originalTrainer": "Jalil Molla"
+    },
+    {
+      "id": 954,
+      "name": "rabsca",
+      "shiny": false,
+      "caughtAt": "2025-07-30T18:58:30.583Z",
+      "coins": 134,
+      "exp": 141,
+      "originalTrainer": "Jalil Molla"
+    }
+  ]
+}

@@ -1,0 +1,686 @@
+{
+  "deposits": {
+    "100069748123257": {
+      "amount": 2189758,
+      "timestamp": "2025-04-18T11:03:42.228Z"
+    },
+    "100031021522664": {
+      "amount": 0,
+      "timestamp": null
+    },
+    "100013794616509": {
+      "amount": 64680000,
+      "timestamp": "2025-04-19T15:40:47.194Z"
+    },
+    "61556406522080": {
+      "amount": 0,
+      "timestamp": null
+    },
+    "100081238216417": {
+      "amount": 0,
+      "timestamp": null
+    },
+    "61570396330447": {
+      "amount": 0,
+      "timestamp": "2025-05-10T08:25:40.079Z"
+    },
+    "100079815110529": {
+      "amount": 39000,
+      "timestamp": "2025-05-10T08:30:25.818Z"
+    },
+    "61570251152348": {
+      "amount": 200,
+      "timestamp": "2025-05-22T16:21:32.798Z"
+    },
+    "100074220753602": {
+      "amount": 0,
+      "timestamp": null
+    }
+  },
+  "loans": {
+    "100069748123257": {
+      "amount": 0,
+      "timestamp": null
+    },
+    "100031021522664": {
+      "amount": 0,
+      "timestamp": null
+    },
+    "100013794616509": {
+      "amount": 0,
+      "timestamp": null
+    },
+    "61556406522080": {
+      "amount": 0,
+      "timestamp": null
+    },
+    "100081238216417": {
+      "amount": 0,
+      "timestamp": null
+    },
+    "61570396330447": {
+      "amount": 0,
+      "timestamp": null
+    },
+    "100079815110529": {
+      "amount": 0,
+      "timestamp": null
+    },
+    "61570251152348": {
+      "amount": 0,
+      "timestamp": null
+    },
+    "100074220753602": {
+      "amount": 0,
+      "timestamp": null
+    }
+  },
+  "lastInterest": {
+    "100069748123257": "2025-05-11T11:15:00.335Z",
+    "100031021522664": null,
+    "100013794616509": "2025-04-23T14:22:18.299Z",
+    "61556406522080": null,
+    "100081238216417": null,
+    "61570396330447": null,
+    "100079815110529": null,
+    "61570251152348": null,
+    "100074220753602": null
+  },
+  "stocks": {
+    "100069748123257": {
+      "jfry": 0,
+      "hssx": 0,
+      "tan": 0,
+      "hawk": 0,
+      "llp": 0,
+      "sbai": 0,
+      "nova": 0,
+      "zeta": 0,
+      "pulse": 21,
+      "vega": 0
+    },
+    "100031021522664": {
+      "jfry": 20,
+      "hssx": 800,
+      "tan": 0,
+      "hawk": 0,
+      "llp": 0,
+      "sbai": 0,
+      "nova": 0,
+      "zeta": 0,
+      "pulse": 0,
+      "vega": 0
+    },
+    "100013794616509": {
+      "jfry": 0,
+      "hssx": 300,
+      "tan": 0,
+      "hawk": 0,
+      "llp": 0,
+      "sbai": 0,
+      "nova": 0,
+      "zeta": 0,
+      "pulse": 0,
+      "vega": 0
+    },
+    "61556406522080": {
+      "jfry": 0,
+      "hssx": 0,
+      "tan": 0,
+      "hawk": 0,
+      "llp": 0,
+      "sbai": 0,
+      "nova": 0,
+      "zeta": 0,
+      "pulse": 0,
+      "vega": 0
+    },
+    "100081238216417": {
+      "jfry": 0,
+      "hssx": 0,
+      "tan": 0,
+      "hawk": 0,
+      "llp": 0,
+      "sbai": 0,
+      "nova": 0,
+      "zeta": 0,
+      "pulse": 0,
+      "vega": 0
+    },
+    "61570396330447": {
+      "jfry": 0,
+      "hssx": 0,
+      "tan": 0,
+      "hawk": 0,
+      "llp": 0,
+      "sbai": 0,
+      "nova": 0,
+      "zeta": 0,
+      "pulse": 0,
+      "vega": 0
+    },
+    "100079815110529": {
+      "jfry": 0,
+      "hssx": 0,
+      "tan": 0,
+      "hawk": 0,
+      "llp": 0,
+      "sbai": 0,
+      "nova": 0,
+      "zeta": 2,
+      "pulse": 0,
+      "vega": 0
+    },
+    "61570251152348": {
+      "jfry": 10,
+      "hssx": 0,
+      "tan": 0,
+      "hawk": 0,
+      "llp": 0,
+      "sbai": 0,
+      "nova": 0,
+      "zeta": 0,
+      "pulse": 0,
+      "vega": 0
+    },
+    "100074220753602": {
+      "jfry": 0,
+      "hssx": 0,
+      "tan": 0,
+      "hawk": 0,
+      "llp": 0,
+      "sbai": 0,
+      "nova": 0,
+      "zeta": 0,
+      "pulse": 0,
+      "vega": 0
+    }
+  },
+  "stockPrices": {
+    "jfry": {
+      "price": 539,
+      "lastUpdated": "2025-09-06T16:14:05.555Z",
+      "ipoPrice": 1000,
+      "prevPrice": 579,
+      "fullName": "$JFRY",
+      "volatility": 0.08,
+      "trend": "bearish"
+    },
+    "hssx": {
+      "price": 3463,
+      "lastUpdated": "2025-09-06T16:14:05.555Z",
+      "ipoPrice": 850,
+      "prevPrice": 3597,
+      "fullName": "$HSSX",
+      "volatility": 0.12,
+      "trend": "bearish"
+    },
+    "tan": {
+      "price": 335,
+      "lastUpdated": "2025-09-06T16:14:05.555Z",
+      "ipoPrice": 600,
+      "prevPrice": 356,
+      "fullName": "$TAN",
+      "volatility": 0.15,
+      "trend": "bearish"
+    },
+    "hawk": {
+      "price": 703,
+      "lastUpdated": "2025-09-06T16:14:05.555Z",
+      "ipoPrice": 750,
+      "prevPrice": 726,
+      "fullName": "$HAWK",
+      "volatility": 0.1,
+      "trend": "bearish"
+    },
+    "llp": {
+      "price": 818,
+      "lastUpdated": "2025-09-06T16:14:05.555Z",
+      "ipoPrice": 1000,
+      "prevPrice": 858,
+      "fullName": "$LLP",
+      "volatility": 0.07,
+      "trend": "bearish"
+    },
+    "sbai": {
+      "price": 8015,
+      "lastUpdated": "2025-09-06T16:14:05.555Z",
+      "ipoPrice": 500,
+      "prevPrice": 5841,
+      "fullName": "$SBAI",
+      "volatility": 0.2,
+      "trend": "bullish"
+    },
+    "nova": {
+      "price": 513,
+      "lastUpdated": "2025-09-06T16:14:05.555Z",
+      "ipoPrice": 1200,
+      "prevPrice": 572,
+      "fullName": "$NOVA",
+      "volatility": 0.09,
+      "trend": "bearish"
+    },
+    "zeta": {
+      "price": 288,
+      "lastUpdated": "2025-09-06T16:14:05.555Z",
+      "ipoPrice": 700,
+      "prevPrice": 318,
+      "fullName": "$ZETA",
+      "volatility": 0.14,
+      "trend": "bearish"
+    },
+    "pulse": {
+      "price": 607,
+      "lastUpdated": "2025-09-06T16:14:05.555Z",
+      "ipoPrice": 900,
+      "prevPrice": 621,
+      "fullName": "$PULSE",
+      "volatility": 0.11,
+      "trend": "bearish"
+    },
+    "vega": {
+      "price": 766,
+      "lastUpdated": "2025-09-06T16:14:05.555Z",
+      "ipoPrice": 1100,
+      "prevPrice": 820,
+      "fullName": "$VEGA",
+      "volatility": 0.13,
+      "trend": "bearish"
+    }
+  },
+  "transactions": {
+    "100069748123257": [
+      {
+        "timestamp": "2025-05-11T11:23:02.962Z",
+        "type": "stock_buy",
+        "amount": 12947,
+        "details": {
+          "stock": "pulse",
+          "shares": 11,
+          "pricePerShare": 1177
+        }
+      },
+      {
+        "timestamp": "2025-05-11T11:21:36.911Z",
+        "type": "withdraw",
+        "amount": 100000,
+        "details": {
+          "originalAmount": 100000,
+          "tax": 0
+        }
+      },
+      {
+        "timestamp": "2025-05-11T11:15:00.662Z",
+        "type": "interest",
+        "amount": 6165,
+        "details": {
+          "tax": 685
+        }
+      },
+      {
+        "timestamp": "2025-05-10T10:46:58.773Z",
+        "type": "deposit",
+        "amount": 2283593,
+        "details": {}
+      },
+      {
+        "timestamp": "2025-05-10T10:43:42.742Z",
+        "type": "withdraw",
+        "amount": 2278106,
+        "details": {
+          "originalAmount": 2278106,
+          "tax": 0
+        }
+      },
+      {
+        "timestamp": "2025-05-10T10:42:31.783Z",
+        "type": "interest",
+        "amount": 30345,
+        "details": {
+          "tax": 3371
+        }
+      },
+      {
+        "timestamp": "2025-05-10T10:42:06.982Z",
+        "type": "stock_buy",
+        "amount": 10390,
+        "details": {
+          "stock": "pulse",
+          "shares": 10,
+          "pricePerShare": 1039
+        }
+      },
+      {
+        "timestamp": "2025-05-04T14:11:53.095Z",
+        "type": "interest",
+        "amount": 18061,
+        "details": {
+          "tax": 2006
+        }
+      },
+      {
+        "timestamp": "2025-05-01T08:17:20.443Z",
+        "type": "interest",
+        "amount": 29700,
+        "details": {
+          "tax": 3300
+        }
+      },
+      {
+        "timestamp": "2025-04-30T06:04:10.351Z",
+        "type": "deposit",
+        "amount": 2200000,
+        "details": {}
+      },
+      {
+        "timestamp": "2025-04-26T08:18:05.305Z",
+        "type": "receive",
+        "amount": 300000,
+        "details": {
+          "sender": "100031021522664",
+          "originalAmount": 300000,
+          "tax": 0
+        }
+      },
+      {
+        "timestamp": "2025-04-26T08:14:05.260Z",
+        "type": "withdraw",
+        "amount": 1913307,
+        "details": {
+          "originalAmount": 1913307,
+          "tax": 0
+        }
+      },
+      {
+        "timestamp": "2025-04-26T08:13:51.758Z",
+        "type": "deposit",
+        "amount": 1913307,
+        "details": {}
+      },
+      {
+        "timestamp": "2025-04-26T08:12:54.653Z",
+        "type": "withdraw",
+        "amount": 22674,
+        "details": {
+          "originalAmount": 22674,
+          "tax": 0
+        }
+      },
+      {
+        "timestamp": "2025-04-26T08:07:41.084Z",
+        "type": "withdraw",
+        "amount": 1889549,
+        "details": {
+          "originalAmount": 2099498,
+          "tax": 10
+        }
+      },
+      {
+        "timestamp": "2025-04-26T08:07:40.999Z",
+        "type": "interest",
+        "amount": 22674,
+        "details": {
+          "tax": 2519
+        }
+      },
+      {
+        "timestamp": "2025-04-21T14:28:57.638Z",
+        "type": "interest",
+        "amount": 29498,
+        "details": {
+          "tax": 1552
+        }
+      },
+      {
+        "timestamp": "2025-04-18T11:21:46.766Z",
+        "type": "vip_silver_gift",
+        "amount": 0,
+        "details": {
+          "from": "100031021522664"
+        }
+      }
+    ],
+    "100031021522664": [
+      {
+        "timestamp": "2025-05-22T16:22:46.562Z",
+        "type": "loan_repaid",
+        "amount": 999999998,
+        "details": {
+          "penalty": 0
+        }
+      },
+      {
+        "timestamp": "2025-05-22T16:22:08.541Z",
+        "type": "loan_taken",
+        "amount": 999999998,
+        "details": {}
+      },
+      {
+        "timestamp": "2025-05-22T16:16:44.963Z",
+        "type": "stock_buy",
+        "amount": 12520,
+        "details": {
+          "stock": "jfry",
+          "shares": 20,
+          "pricePerShare": 626
+        }
+      },
+      {
+        "timestamp": "2025-04-25T19:08:29.816Z",
+        "type": "stock_buy",
+        "amount": 961600,
+        "details": {
+          "stock": "hssx",
+          "shares": 800,
+          "pricePerShare": 1202
+        }
+      }
+    ],
+    "100013794616509": [
+      {
+        "timestamp": "2025-04-23T14:22:18.764Z",
+        "type": "interest",
+        "amount": 5880000,
+        "details": {
+          "tax": 0
+        }
+      },
+      {
+        "timestamp": "2025-04-20T19:59:29.899Z",
+        "type": "stock_buy",
+        "amount": 295500,
+        "details": {
+          "stock": "hssx",
+          "shares": 300,
+          "pricePerShare": 985
+        }
+      },
+      {
+        "timestamp": "2025-04-20T19:20:09.174Z",
+        "type": "interest",
+        "amount": 2800000,
+        "details": {
+          "tax": 0
+        }
+      },
+      {
+        "timestamp": "2025-04-19T15:44:18.540Z",
+        "type": "loan_repaid",
+        "amount": 300000,
+        "details": {
+          "penalty": 0
+        }
+      },
+      {
+        "timestamp": "2025-04-19T15:43:42.280Z",
+        "type": "loan_taken",
+        "amount": 300000,
+        "details": {}
+      },
+      {
+        "timestamp": "2025-04-19T15:43:10.186Z",
+        "type": "vip_diamond_purchase",
+        "amount": -5000000,
+        "details": {}
+      },
+      {
+        "timestamp": "2025-04-19T15:41:05.351Z",
+        "type": "deposit",
+        "amount": 50000000,
+        "details": {}
+      },
+      {
+        "timestamp": "2025-04-19T15:40:47.293Z",
+        "type": "deposit",
+        "amount": 6000000,
+        "details": {}
+      },
+      {
+        "timestamp": "2025-04-19T15:39:10.835Z",
+        "type": "vip_gold_purchase",
+        "amount": -2000000,
+        "details": {}
+      }
+    ],
+    "61556406522080": [],
+    "100079815110529": [
+      {
+        "timestamp": "2025-05-10T08:32:57.802Z",
+        "type": "stock_buy",
+        "amount": 606,
+        "details": {
+          "stock": "zeta",
+          "shares": 2,
+          "pricePerShare": 303
+        }
+      },
+      {
+        "timestamp": "2025-05-10T08:32:28.461Z",
+        "type": "receive",
+        "amount": 658,
+        "details": {
+          "sender": "61570396330447",
+          "originalAmount": 658,
+          "tax": 0.1316
+        }
+      },
+      {
+        "timestamp": "2025-05-10T08:30:25.995Z",
+        "type": "deposit",
+        "amount": 39000,
+        "details": {}
+      },
+      {
+        "timestamp": "2025-05-05T09:04:54.950Z",
+        "type": "vip_gold_gift",
+        "amount": 0,
+        "details": {
+          "from": "100031021522664"
+        }
+      }
+    ],
+    "100081238216417": [
+      {
+        "timestamp": "2025-09-06T16:14:06.154Z",
+        "type": "receive",
+        "amount": 50,
+        "details": {
+          "sender": "100074220753602",
+          "originalAmount": 50,
+          "tax": 0.01
+        }
+      }
+    ],
+    "61570396330447": [
+      {
+        "timestamp": "2025-05-10T08:32:28.401Z",
+        "type": "send",
+        "amount": -658,
+        "details": {
+          "recipient": "100079815110529",
+          "tax": 0.1316
+        }
+      },
+      {
+        "timestamp": "2025-05-10T08:31:48.795Z",
+        "type": "withdraw",
+        "amount": 558,
+        "details": {
+          "originalAmount": 558,
+          "tax": 0
+        }
+      },
+      {
+        "timestamp": "2025-05-10T08:25:40.200Z",
+        "type": "deposit",
+        "amount": 558,
+        "details": {}
+      }
+    ],
+    "61570251152348": [
+      {
+        "timestamp": "2025-05-23T17:02:29.919Z",
+        "type": "deposit",
+        "amount": 200,
+        "details": {}
+      },
+      {
+        "timestamp": "2025-05-23T17:00:48.725Z",
+        "type": "withdraw",
+        "amount": 100,
+        "details": {
+          "originalAmount": 100,
+          "tax": 0
+        }
+      },
+      {
+        "timestamp": "2025-05-22T16:21:33.091Z",
+        "type": "deposit",
+        "amount": 100,
+        "details": {}
+      },
+      {
+        "timestamp": "2025-05-22T16:18:24.349Z",
+        "type": "stock_buy",
+        "amount": 3130,
+        "details": {
+          "stock": "jfry",
+          "shares": 5,
+          "pricePerShare": 626
+        }
+      },
+      {
+        "timestamp": "2025-05-22T16:17:27.185Z",
+        "type": "stock_buy",
+        "amount": 3130,
+        "details": {
+          "stock": "jfry",
+          "shares": 5,
+          "pricePerShare": 626
+        }
+      },
+      {
+        "timestamp": "2025-05-22T16:06:11.929Z",
+        "type": "receive",
+        "amount": 10000,
+        "details": {
+          "sender": "100031021522664",
+          "originalAmount": 10000,
+          "tax": 0
+        }
+      }
+    ],
+    "100074220753602": [
+      {
+        "timestamp": "2025-09-06T16:14:06.089Z",
+        "type": "send",
+        "amount": -50,
+        "details": {
+          "recipient": "100081238216417",
+          "tax": 0.01
+        }
+      }
+    ]
+  },
+  "vip": {}
+}

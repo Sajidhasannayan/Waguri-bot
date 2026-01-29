@@ -1,0 +1,599 @@
+[
+  {
+    "id": "100069748123257",
+    "wins": [
+      {
+        "tryNumber": 7,
+        "timeSuccess": 300969,
+        "date": "2025-05-03T08:19:11.643Z",
+        "wordLength": 6
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 125000,
+        "date": "2025-05-02T18:30:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 90000,
+        "date": "2025-05-02T17:45:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 150000,
+        "date": "2025-05-02T16:30:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 110000,
+        "date": "2025-05-02T15:15:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 85000,
+        "date": "2025-05-02T14:00:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 180000,
+        "date": "2025-05-02T13:20:00.000Z",
+        "wordLength": 6
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 120000,
+        "date": "2025-05-02T12:10:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 140000,
+        "date": "2025-05-02T11:05:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 80000,
+        "date": "2025-05-02T10:00:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 115000,
+        "date": "2025-05-01T19:30:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 135000,
+        "date": "2025-05-01T18:20:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 105000,
+        "date": "2025-05-01T17:15:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 75000,
+        "date": "2025-05-01T16:10:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 120000,
+        "date": "2025-05-01T15:05:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 145000,
+        "date": "2025-05-01T14:00:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 82000,
+        "date": "2025-05-01T13:30:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 118000,
+        "date": "2025-05-01T12:20:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 142000,
+        "date": "2025-05-01T11:10:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 78000,
+        "date": "2025-05-01T10:00:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 122000,
+        "date": "2025-04-30T19:30:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 148000,
+        "date": "2025-04-30T18:20:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 85000,
+        "date": "2025-04-30T17:15:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 112000,
+        "date": "2025-04-30T16:10:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 138000,
+        "date": "2025-04-30T15:05:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 79000,
+        "date": "2025-04-30T14:00:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 125000,
+        "date": "2025-04-30T13:30:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 152000,
+        "date": "2025-04-30T12:20:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 88000,
+        "date": "2025-04-30T11:10:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 115000,
+        "date": "2025-04-30T10:00:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 142000,
+        "date": "2025-04-29T19:30:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 82000,
+        "date": "2025-04-29T18:20:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 128000,
+        "date": "2025-04-29T17:15:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 155000,
+        "date": "2025-04-29T16:10:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 92000,
+        "date": "2025-04-29T15:05:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 132000,
+        "date": "2025-04-29T14:00:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 148000,
+        "date": "2025-04-29T13:30:00.000Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 144053,
+        "date": "2025-05-04T08:16:34.722Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 153539,
+        "date": "2025-05-04T08:27:00.319Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 111678,
+        "date": "2025-05-04T08:29:00.116Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 155226,
+        "date": "2025-05-04T08:34:34.071Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 232214,
+        "date": "2025-05-04T12:38:54.584Z",
+        "wordLength": 14
+      },
+      {
+        "tryNumber": 12,
+        "timeSuccess": 396513,
+        "date": "2025-05-04T12:46:00.727Z",
+        "wordLength": 14
+      },
+      {
+        "tryNumber": 9,
+        "timeSuccess": 454274,
+        "date": "2025-05-04T12:55:28.050Z",
+        "wordLength": 12
+      },
+      {
+        "tryNumber": 7,
+        "timeSuccess": 448321,
+        "date": "2025-05-04T15:37:23.513Z",
+        "wordLength": 12
+      },
+      {
+        "tryNumber": 10,
+        "timeSuccess": 507851,
+        "date": "2025-05-04T15:46:12.157Z",
+        "wordLength": 12
+      },
+      {
+        "tryNumber": 7,
+        "timeSuccess": 397377,
+        "date": "2025-05-05T09:52:18.287Z",
+        "wordLength": 8
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 384735,
+        "date": "2025-05-05T09:59:11.615Z",
+        "wordLength": 14
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 322407,
+        "date": "2025-05-05T10:29:36.386Z",
+        "wordLength": 6
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 89436,
+        "date": "2025-05-09T12:01:42.975Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 97737,
+        "date": "2025-05-10T10:51:08.003Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 7,
+        "timeSuccess": 336170,
+        "date": "2025-05-10T15:21:29.667Z",
+        "wordLength": 14
+      },
+      {
+        "tryNumber": 7,
+        "timeSuccess": 438554,
+        "date": "2025-05-10T15:29:31.834Z",
+        "wordLength": 14
+      }
+    ],
+    "losses": [],
+    "points": 1044
+  },
+  {
+    "id": "100088877141336",
+    "wins": [
+      {
+        "tryNumber": 5,
+        "timeSuccess": 232103,
+        "date": "2025-05-03T13:41:39.315Z",
+        "wordLength": 10
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 76377,
+        "date": "2025-05-03T13:43:31.029Z",
+        "wordLength": 3
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 29723,
+        "date": "2025-05-03T14:12:20.159Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 34631,
+        "date": "2025-05-09T12:03:43.604Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 30333,
+        "date": "2025-05-09T12:04:21.039Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 24273,
+        "date": "2025-05-10T10:48:41.773Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 28802,
+        "date": "2025-05-10T10:49:19.355Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 97777,
+        "date": "2025-05-10T10:51:11.236Z",
+        "wordLength": 4
+      }
+    ],
+    "losses": [
+      {
+        "tryNumber": 6,
+        "timeSuccess": 103255,
+        "date": "2025-05-03T13:46:31.817Z",
+        "wordLength": 3
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 216635,
+        "date": "2025-05-03T13:50:53.671Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 183199,
+        "date": "2025-05-03T14:10:54.991Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 299888,
+        "date": "2025-05-03T14:17:34.404Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 115839,
+        "date": "2025-05-09T12:02:28.647Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 241889,
+        "date": "2025-05-09T12:08:32.395Z",
+        "wordLength": 4
+      }
+    ],
+    "points": 368
+  },
+  {
+    "id": "100031021522664",
+    "wins": [
+      {
+        "tryNumber": 4,
+        "timeSuccess": 139056,
+        "date": "2025-05-03T13:59:45.931Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 130543,
+        "date": "2025-05-03T14:09:55.860Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 291319,
+        "date": "2025-05-03T19:20:11.505Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 228050,
+        "date": "2025-05-03T19:24:59.342Z",
+        "wordLength": 14
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 176897,
+        "date": "2025-05-04T06:21:05.482Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 137365,
+        "date": "2025-05-04T06:28:09.483Z",
+        "wordLength": 3
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 170245,
+        "date": "2025-05-04T18:48:23.646Z",
+        "wordLength": 14
+      },
+      {
+        "tryNumber": 3,
+        "timeSuccess": 144684,
+        "date": "2025-05-04T18:53:10.313Z",
+        "wordLength": 14
+      }
+    ],
+    "losses": [
+      {
+        "tryNumber": 6,
+        "timeSuccess": 343154,
+        "date": "2025-05-04T18:38:51.222Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 326145,
+        "date": "2025-05-04T18:44:45.601Z",
+        "wordLength": 4
+      }
+    ],
+    "points": 473
+  },
+  {
+    "id": "100079815110529",
+    "wins": [
+      {
+        "tryNumber": 6,
+        "timeSuccess": 407073,
+        "date": "2025-05-04T05:10:51.040Z",
+        "wordLength": 5
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 535246,
+        "date": "2025-05-04T05:20:21.441Z",
+        "wordLength": 14
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 300251,
+        "date": "2025-05-04T05:26:16.689Z",
+        "wordLength": 14
+      },
+      {
+        "tryNumber": 11,
+        "timeSuccess": 2387442,
+        "date": "2025-05-04T06:09:27.909Z",
+        "wordLength": 14
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 71968,
+        "date": "2025-05-04T06:11:28.664Z",
+        "wordLength": 4
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 260462,
+        "date": "2025-05-04T12:15:09.805Z",
+        "wordLength": 10
+      },
+      {
+        "tryNumber": 5,
+        "timeSuccess": 222638,
+        "date": "2025-05-04T12:19:52.751Z",
+        "wordLength": 10
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 162261,
+        "date": "2025-05-04T12:23:08.035Z",
+        "wordLength": 10
+      },
+      {
+        "tryNumber": 6,
+        "timeSuccess": 540869,
+        "date": "2025-05-04T12:32:33.241Z",
+        "wordLength": 10
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 88219,
+        "date": "2025-05-04T12:36:55.096Z",
+        "wordLength": 10
+      },
+      {
+        "tryNumber": 4,
+        "timeSuccess": 140195,
+        "date": "2025-05-04T12:43:10.085Z",
+        "wordLength": 10
+      },
+      {
+        "tryNumber": 7,
+        "timeSuccess": 426931,
+        "date": "2025-05-04T12:51:42.739Z",
+        "wordLength": 10
+      }
+    ],
+    "losses": [
+      {
+        "tryNumber": 6,
+        "timeSuccess": 419723,
+        "date": "2025-05-05T09:50:05.884Z",
+        "wordLength": 4
+      }
+    ],
+    "points": 622
+  },
+  {
+    "id": "61570329532420",
+    "wins": [
+      {
+        "tryNumber": 8,
+        "timeSuccess": 396869,
+        "date": "2025-05-04T18:57:56.877Z",
+        "wordLength": 14
+      }
+    ],
+    "losses": [],
+    "points": 49
+  },
+  {
+    "id": "61556406522080",
+    "wins": [
+      {
+        "tryNumber": 3,
+        "timeSuccess": 34050,
+        "date": "2025-05-04T20:11:51.010Z",
+        "wordLength": 4
+      }
+    ],
+    "losses": [],
+    "points": 62
+  }
+]
