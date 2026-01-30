@@ -1,4 +1,141 @@
 const moment = require('moment-timezone');
+const BAD_WORDS = [
+  "fuck",
+  "shit",
+  "bitch",
+  "asshole",
+  "ass",
+  "dick",
+  "pussy",
+  "bastard",
+  "motherfucker",
+  "fucker",
+  "cunt",
+  "whore",
+  "molest",
+  "chod",
+  "khanki",
+  "magi",
+  "bessa",
+  "bessha",
+  "madarcod",
+  "madarchod",
+  "behenchod",
+  "baincod",
+  "bancod",
+  "bainchod",
+  "slut",
+  "cock",
+  "sucker",
+  "stfu",
+  "chudi",
+  "chudlam",
+  "chudbo",
+  "cudi",
+  "putki",
+  "hoga",
+  "paca",
+  "pacha",
+  "pasa",
+  "guwa",
+  "goa",
+  "gua",
+  "thapabo",
+  "thapa",
+  "mal",
+  "kutta",
+  "suor",
+  "shour",
+  "suwor",
+  "shuor",
+  "shuwor",
+  "rape",
+  "childporn",
+  "bum",
+  "butt",
+  "bokacoda",
+  "bkacda",
+  "bokachoda",
+  "bokcod",
+  "bkcd",
+  "bokchod",
+  "bhudai",
+  "marbo",
+  "bhoda",
+  "boda",
+  "bodai",
+  "nosu",
+  "nola",
+  "atel",
+  "achoda",
+  "achuda",
+  "acoda",
+  "tukai",
+  "tokai",
+  "nigga",
+  "nigger",
+  "genocide",
+  "dhorson",
+  "bal",
+  "noti",
+  "abal",
+  "mage",
+  "magee",
+  "kanki",
+  "khanke",
+  "khankee",
+  "kanke",
+  "dhon",
+  "dhoner",
+  "mara",
+  "cum",
+  "prostitute",
+  "dickless",
+  "madrcd",
+  "jaura",
+  "jawra",
+  "jaora",
+  "kukur",
+  "impotent",
+  "heda",
+  "chudirbhai",
+  "rendir",
+  "randi",
+  "bhuski",
+  "cunt",
+  "poop",
+  "hagu",
+  "gu",
+  "haga"
+  "mut",
+  "nut",
+  "creampie",
+  "creamed",
+  "molester",
+  "fucked"
+  
+];
+
+// turns "ass" → "a$$", "fuck" → "f*ck"
+function censorWord(word) {
+  if (word.length <= 2) return "*".repeat(word.length);
+  const middle = word
+    .slice(1, -1)
+    .replace(/[a-z]/gi, match => {
+      const map = { a: "@", s: "$", i: "!", o: "0", e: "*", u: "µ" };
+      return map[match.toLowerCase()] || "*";
+    });
+  return word[0] + middle + word[word.length - 1];
+}
+
+function censorText(text) {
+  let result = text;
+  for (const bad of BAD_WORDS) {
+    const regex = new RegExp(`\\b${bad}\\b`, "gi");
+    result = result.replace(regex, match => censorWord(match));
+  }
+  return result;
+}
 
 module.exports = {
   config: {
@@ -81,7 +218,8 @@ module.exports = {
       resendMessage += `╰───────────────────⭑\n\n`;
       
       if (unsentMsg.body) {
-        resendMessage += `${unsentMsg.body}\n\n`;
+  const safeText = censorText(unsentMsg.body);
+  resendMessage += `${safeText}\n\n`;
       }
 
       try {
