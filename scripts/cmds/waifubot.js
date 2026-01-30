@@ -1,69 +1,58 @@
-const axios = require('axios');
-const fs = require('fs');
+const fs = require("fs");
+const path = require("path");
 
 const waifuTimers = {};
-const WAIFU_REALM_FILE = "./waifurealm.json";
 const lastListState = {};
-const WAIFU_DATA_URL = "https://raw.githubusercontent.com/JiachenRen/get_waifu/main/waifu_data.json";
 
-let waifuDataCache = null;
-let lastFetchTime = 0;
+const WAIFU_REALM_FILE = path.join(__dirname, "waifurealm.json");
+const WAIFU_METADATA_FILE = path.join(__dirname, "waifu_metadata.json");
 
-async function fetchWaifuData() {
-  // Cache the data for 1 hour to avoid too many requests
-  const now = Date.now();
-  if (waifuDataCache && (now - lastFetchTime) < 3600000) {
-    return waifuDataCache;
-  }
-
-  try {
-    const response = await axios.get(WAIFU_DATA_URL);
-    waifuDataCache = response.data;
-    lastFetchTime = now;
-    return waifuDataCache;
-  } catch (err) {
-    console.error("Failed to fetch waifu data:", err);
-    return null;
-  }
+// load once
+let WAIFU_DATA = [];
+try {
+  WAIFU_DATA = JSON.parse(fs.readFileSync(WAIFU_METADATA_FILE, "utf8"));
+  console.log(`[WAIFU] Loaded ${WAIFU_DATA.length} waifus`);
+} catch (e) {
+  console.error("❌ Failed to load waifu_metadata.json", e);
 }
 
-async function fetchRandomWaifu() {
-  const data = await fetchWaifuData();
-  if (!data || !data.length) return null;
+function fetchRandomWaifu() {
+  if (!WAIFU_DATA.length) return null;
 
-  const randomWaifu = data[Math.floor(Math.random() * data.length)];
-  
+  const w = WAIFU_DATA[Math.floor(Math.random() * WAIFU_DATA.length)];
+
   return {
-    name: randomWaifu.name || "Unknown",
-    originalName: randomWaifu.original_name || randomWaifu.name || "Unknown",
-    romaji: randomWaifu.romaji || "Unknown",
-    age: randomWaifu.age || "Unknown",
-    birthday: randomWaifu.birthday || "Unknown",
-    anime: randomWaifu.anime || randomWaifu.series || "Unknown",
-    rank: randomWaifu.popularity || randomWaifu.rank || 9999,
-    image: randomWaifu.image || randomWaifu.display_picture || "https://i.imgur.com/unknown.png",
+    id: w.id,
+    name: w.name,
+    originalName: w.original_name || "-",
+    romaji: w.romaji_name || "-",
+    age: w.age ?? "Unknown",
+    birthday: w.birthday_month
+      ? `${w.birthday_month}/${w.birthday_day || "?"}/${w.birthday_year || "?"}`
+      : "Unknown",
+    anime: w.series?.name || "Unknown",
+    rank: w.popularity_rank ?? 9999,
+    image: w.display_picture,
     exp: Math.floor(Math.random() * 50) + 100
   };
 }
 
-async function searchWaifus(query) {
-  const data = await fetchWaifuData();
-  if (!data) return [];
+function searchWaifus(query) {
+  const q = query.toLowerCase();
 
-  const lowerQuery = query.toLowerCase();
-  return data
-    .filter(waifu => 
-      waifu.name.toLowerCase().includes(lowerQuery) ||
-      (waifu.original_name && waifu.original_name.toLowerCase().includes(lowerQuery)) ||
-      (waifu.anime && waifu.anime.toLowerCase().includes(lowerQuery))
+  return WAIFU_DATA
+    .filter(w =>
+      w.name.toLowerCase().includes(q) ||
+      (w.original_name && w.original_name.toLowerCase().includes(q)) ||
+      (w.series?.name && w.series.name.toLowerCase().includes(q))
     )
-    .map(waifu => ({
-      name: waifu.name,
-      rank: waifu.popularity || waifu.rank || 9999,
-      image: waifu.image || waifu.display_picture || "https://i.imgur.com/unknown.png",
-      url: `https://mywaifulist.moe/search?q=${encodeURIComponent(waifu.name)}`,
-      originalName: waifu.original_name,
-      anime: waifu.anime || waifu.series
+    .map(w => ({
+      name: w.name,
+      originalName: w.original_name,
+      romaji: w.romaji_name,
+      anime: w.series?.name || "Unknown",
+      rank: w.popularity_rank ?? 9999,
+      image: w.display_picture
     }));
 }
 
@@ -161,7 +150,9 @@ module.exports = {
 
       const msg = await message.send({
         body: `A cute waifu has emerged from another realm!\nYou Have to save her!\n\n- \"I feel myself slipping… I need you to help me. Please, call my name before I vanish!\"`,
-        attachment: await global.utils.getStreamFromURL(waifu.image)
+        attachment: waifu.image
+  ? await global.utils.getStreamFromURL(waifu.image)
+  : null
       });
 
       global.GoatBot.onReply.set(msg.messageID, {
@@ -181,8 +172,13 @@ module.exports = {
 
     if (Reply.type === "catch") {
       if (Reply.caught) return;
-      const nameParts = Reply.waifu.name.toLowerCase().split(" ");
-      if (nameParts.includes(input)) {
+      const answers = [
+  Reply.waifu.name.toLowerCase(),
+  Reply.waifu.originalName?.toLowerCase(),
+  Reply.waifu.romaji?.toLowerCase()
+].filter(Boolean);
+
+if (answers.some(n => n.includes(input))) {
         Reply.caught = true;
         const collection = saveCaughtWaifu(userID, Reply.waifu);
         const total = collection.reduce((a, b) => a + b.count, 0);
