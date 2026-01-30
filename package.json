@@ -8,7 +8,6 @@
 		"npm": ">=10.0.0"
 	},
 	"dependencies": {
-		"20": "^3.1.9",
 		"@distube/ytdl-core": "^4.13.3",
 		"@squoosh/lib": "^0.5.3",
 		"app-store-scraper": "^0.18.0",
