@@ -113,7 +113,11 @@ const BAD_WORDS = [
   "creampie",
   "creamed",
   "molester",
-  "fucked"
+  "fucked",
+  "fucking",
+  "choda",
+  "sex",
+  "sexybitch"
   
 ];
 
