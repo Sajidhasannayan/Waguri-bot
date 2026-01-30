@@ -107,7 +107,7 @@ const BAD_WORDS = [
   "poop",
   "hagu",
   "gu",
-  "haga"
+  "haga",
   "mut",
   "nut",
   "creampie",
