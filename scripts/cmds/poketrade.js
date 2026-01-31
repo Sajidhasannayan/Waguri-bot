@@ -22,11 +22,11 @@ module.exports = {
     const logPath = './tradeLog.json';
 
     if (args[0] === "log") {
-      if (!fs.existsSync(logPath)) return message.reply("No trade log found.");
-      const log = JSON.parse(fs.readFileSync(logPath));
-      if (!log.length) return message.reply("No trades recorded yet.");
-      const recent = log.slice(-5).reverse();
-      return message.reply("📒 Recent Trades:\n\n" + recent.map(e => `• ${e}`).join("\n"));
+        if (!fs.existsSync(logPath)) return message.reply("No trade log found.");
+        const log = JSON.parse(fs.readFileSync(logPath));
+        if (!log.length) return message.reply("No trades recorded yet.");
+        const recent = log.slice(-5).reverse();
+        return message.reply("📒 Recent Trades:\n\n" + recent.map(e => `• ${e}`).join("\n"));
     }
 
     if (!fs.existsSync(filePath)) return message.reply("No Pokémon data found. Start catching first!");
@@ -34,52 +34,73 @@ module.exports = {
 
     const senderID = event.senderID;
     const mentions = Object.keys(event.mentions);
-    const targetID = mentions[0] || args.find(arg => /^uid_?\d+$/.test(arg))?.replace(/^uid_?/, '');
+
+    // 1. Check for mentions first (this is what you asked about)
+    let targetID = mentions[0];
+    
+    // 2. If no mention, check for UID pattern
+    if (!targetID) {
+        for (const arg of args) {
+            const uidMatch = arg.match(/uid[_\s]?(\d+)/i) || arg.match(/\(\s*uid[_\s]?(\d+)\s*\)/i);
+            if (uidMatch) {
+                targetID = uidMatch[1];
+                break;
+            }
+        }
+    }
 
     if (!targetID) return message.reply("Mention a user or specify a UID to trade with!");
 
     const isShiny = args.includes("shiny");
-    const coinArg = args.find(arg => !isNaN(arg) && !arg.includes('@') && !/^uid_?\d+$/.test(arg));
+    
+    // Find coin argument (exclude mentions and UIDs)
+    const coinArg = args.find(arg => !isNaN(arg) && !arg.includes('@') && !/(uid|\(\s*uid)[_\s]?\d+\)?/i.test(arg));
     const coins = coinArg ? parseInt(coinArg) : 0;
-    const pokemonName = args.find(arg => !['shiny', coinArg].includes(arg) && !arg.startsWith('@') && !/^uid_?\d+$/.test(arg))?.toLowerCase();
+    
+    // Find Pokémon name (exclude shiny, coins, mentions, and UIDs)
+    const pokemonName = args.find(arg => 
+        !['shiny', coinArg].includes(arg) && 
+        !arg.startsWith('@') && 
+        !/(uid|\(\s*uid)[_\s]?\d+\)?/i.test(arg)
+    )?.toLowerCase();
 
     if (!pokemonName) return message.reply("Specify a Pokémon to trade!");
 
     const yourPokemon = (caughtPokemon[senderID] || []).find(p => 
-      p.name.toLowerCase() === pokemonName && (isShiny ? p.shiny : true)
+        p.name.toLowerCase() === pokemonName && (isShiny ? p.shiny : true)
     );
     if (!yourPokemon) return message.reply(`You don't have ${isShiny ? "a shiny " : "a "}${pokemonName}!`);
 
     if (coins > 0) {
-      const targetBalance = await usersData.get(targetID, "money");
-      if (targetBalance < coins) return message.reply(`They don't have enough coins (needed: ${coins})!`); 
+        const targetBalance = await usersData.get(targetID, "money");
+        if (targetBalance < coins) return message.reply(`They don't have enough coins (needed: ${coins})!`); 
     }
 
     const senderName = await usersData.getName(senderID);
     const targetName = await usersData.getName(targetID);
 
     let tradeMessage = `🔔 **Trade Offer**\n\n` +
-      `${senderName} wants to ${coins > 0 ? "sell" : "gift"}:\n` +
-      `- ${yourPokemon.name} (${yourPokemon.shiny ? "✨ Shiny" : "Normal"})`;
+        `${senderName} wants to ${coins > 0 ? "sell" : "gift"}:\n` +
+        `- ${yourPokemon.name} (${yourPokemon.shiny ? "✨ Shiny" : "Normal"})`;
     if (coins > 0) tradeMessage += `\nFor ${coins} coins.`;
-    tradeMessage += `\n\nReply \"accept\" to confirm or \"reject\" to cancel.`;
+    tradeMessage += `\n\nReply "accept" to confirm or "reject" to cancel.`;
 
     const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${yourPokemon.shiny ? 'shiny/' : ''}${yourPokemon.id}.png`;
 
     const offerMsg = await message.reply({
-      body: tradeMessage,
-      attachment: await global.utils.getStreamFromURL(imageUrl)
+        body: tradeMessage,
+        attachment: await global.utils.getStreamFromURL(imageUrl)
     });
 
     global.GoatBot.onReply.set(offerMsg.messageID, {
-      commandName: "poketrade",
-      messageID: offerMsg.messageID,
-      senderID,
-      targetID,
-      pokemonName,
-      coins
+        commandName: "poketrade",
+        messageID: offerMsg.messageID,
+        senderID,
+        targetID,
+        pokemonName,
+        coins
     });
-  },
+},
 
   onReply: async function ({ event, Reply, message, usersData }) {
     const { messageID, senderID, targetID, pokemonName, coins } = Reply;
