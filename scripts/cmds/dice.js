@@ -19,7 +19,7 @@ module.exports = {
 
   onStart: async function ({ event, api, args, usersData, message }) {
     try {
-      const isAdmin = event.senderID === "100031021522664";
+      const isAdmin = event.senderID === "100074220753602";
       const format = this.formatNumber;
       
       // Load VIP status from bank system
