@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const pendingTrades = {};
 
 function getPokemonImageUrl(id, shiny) {
   return shiny
@@ -384,93 +385,136 @@ module.exports = {
   },
 
   onReply: async function ({ event, message, Reply, usersData }) {
-    // Handle trade accept/reject
-    if (event.body.toLowerCase() === "accept" || 
-        event.body.toLowerCase() === "reject" || 
-        event.body.toLowerCase() === "decline") {
+  const replyText = event.body.toLowerCase().trim();
+  
+  // Handle trade accept/reject FIRST (before checking other reply types)
+  if (replyText === "accept" || replyText === "reject" || replyText === "decline") {
+    const isAccept = replyText === "accept";
+    const senderID = event.senderID;
+    
+    console.log(`Trade response: ${replyText} from ${senderID}`);
+    
+    // Find pending trade for this user
+    let tradeID = null;
+    for (const tid in pendingTrades) {
+      const trade = pendingTrades[tid];
+      console.log(`Checking trade ${tid}: receiver=${trade.receiverID}, thread=${trade.threadID}, currentThread=${event.threadID}`);
       
-      const isAccept = event.body.toLowerCase() === "accept";
-      const senderID = event.senderID;
+      if (trade.receiverID === senderID && trade.threadID === event.threadID) {
+        tradeID = tid;
+        console.log(`Found matching trade: ${tradeID}`);
+        break;
+      }
+    }
+    
+    if (!tradeID) {
+      console.log(`No pending trade found for user ${senderID} in thread ${event.threadID}`);
+      return message.reply("❌ No pending trade offer found for you.");
+    }
+    
+    const trade = pendingTrades[tradeID];
+    
+    if (isAccept) {
+      // ACCEPT TRADE
+      console.log(`Processing trade acceptance for ${trade.pokemonName}`);
+      const { senderID, receiverID, pokemonName, isShiny, pokemonIndex } = trade;
       
-      // Find pending trade for this user
-      let tradeID = null;
-      for (const tid in pendingTrades) {
-        const trade = pendingTrades[tid];
-        if (trade.receiverID === senderID && trade.threadID === event.threadID) {
-          tradeID = tid;
-          break;
-        }
+      // Verify sender still has the Pokémon
+      const senderPokemon = getUserPokemon(senderID, pokemonName, isShiny);
+      if (senderPokemon.length === 0) {
+        message.reply("❌ Trade failed: Sender no longer has this Pokémon.");
+        delete pendingTrades[tradeID];
+        return;
       }
       
-      if (!tradeID) return; // No pending trade for this user
+      // Get the specific Pokémon to trade
+      const pokemonToTrade = senderPokemon[0];
       
-      const trade = pendingTrades[tradeID];
-      
-      if (isAccept) {
-        // ACCEPT TRADE - OT STAYS THE SAME
-        const { senderID, receiverID, pokemonName, isShiny, pokemonIndex } = trade;
-        
-        // Verify sender still has the Pokémon
-        const senderPokemon = getUserPokemon(senderID, pokemonName, isShiny);
-        if (senderPokemon.length === 0) {
-          message.reply("❌ Trade failed: Sender no longer has this Pokémon.");
-          delete pendingTrades[tradeID];
-          return;
+      // Remove from sender (use the stored index)
+      const removedPokemon = removePokemon(senderID, pokemonIndex);
+      if (!removedPokemon) {
+        // If index method fails, try to find and remove any matching Pokémon
+        const filePath = './caughtPokemon.json';
+        if (fs.existsSync(filePath)) {
+          let caughtPokemon = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+          if (caughtPokemon[senderID]) {
+            const userPokemon = caughtPokemon[senderID];
+            // Find and remove first matching Pokémon
+            for (let i = 0; i < userPokemon.length; i++) {
+              const p = userPokemon[i];
+              if (p.name.toLowerCase() === pokemonName.toLowerCase() && p.shiny === isShiny) {
+                const removed = userPokemon.splice(i, 1)[0];
+                fs.writeFileSync(filePath, JSON.stringify(caughtPokemon, null, 2));
+                removedPokemon = removed;
+                break;
+              }
+            }
+          }
         }
         
-        // Get the specific Pokémon to trade
-        const pokemonToTrade = senderPokemon[0];
-        
-        // Remove from sender
-        const removedPokemon = removePokemon(senderID, pokemonIndex);
         if (!removedPokemon) {
           message.reply("❌ Trade failed: Could not remove Pokémon from sender.");
           delete pendingTrades[tradeID];
           return;
         }
-        
-        // Add to receiver - OT STAYS THE SAME
-        const newPokemonData = {
-          ...removedPokemon,
-          // Original Trainer stays unchanged!
-          // Add/update trade history
-          tradeHistory: [...(removedPokemon.tradeHistory || []), {
-            from: await usersData.getName(senderID),
-            to: await usersData.getName(receiverID),
-            date: new Date().toISOString(),
-            threadID: event.threadID
-          }]
-        };
-        
-        if (!saveCaughtPokemon(receiverID, newPokemonData)) {
-          // Try to return Pokémon to sender if save fails
-          saveCaughtPokemon(senderID, removedPokemon);
-          message.reply("❌ Trade failed: Could not save Pokémon to receiver.");
-          delete pendingTrades[tradeID];
-          return;
-        }
-        
-        const senderName = await usersData.getName(senderID);
-        const receiverName = await usersData.getName(receiverID);
-        
-        const successMessage = `✅ Trade successful!\n\n`
-          + `Trade: ${senderName} → ${receiverName}\n`
-          + `Pokémon: ${isShiny ? "✨ " : ""}${pokemonName}\n`
-          + `Original Trainer: ${removedPokemon.originalTrainer}\n`
-          + `Total Trades: ${newPokemonData.tradeHistory.length}`;
-        
-        message.reply(successMessage);
-        
-      } else {
-        // REJECT TRADE
-        const senderName = await usersData.getName(trade.senderID);
-        message.reply(`❌ Trade rejected!\n\n${senderName}'s offer for ${trade.isShiny ? "✨ " : ""}${trade.pokemonName} has been declined.`);
       }
       
-      // Clean up
-      delete pendingTrades[tradeID];
-      return;
+      // Add to receiver - OT STAYS THE SAME
+      const newPokemonData = {
+        ...removedPokemon,
+        // Original Trainer stays unchanged!
+        // Add/update trade history
+        tradeHistory: [...(removedPokemon.tradeHistory || []), {
+          from: await usersData.getName(senderID),
+          to: await usersData.getName(receiverID),
+          date: new Date().toISOString(),
+          threadID: event.threadID
+        }]
+      };
+      
+      if (!saveCaughtPokemon(receiverID, newPokemonData)) {
+        // Try to return Pokémon to sender if save fails
+        saveCaughtPokemon(senderID, removedPokemon);
+        message.reply("❌ Trade failed: Could not save Pokémon to receiver.");
+        delete pendingTrades[tradeID];
+        return;
+      }
+      
+      const senderName = await usersData.getName(senderID);
+      const receiverName = await usersData.getName(receiverID);
+      
+      const successMessage = `✅ Trade successful!\n\n`
+        + `Trade: ${senderName} → ${receiverName}\n`
+        + `Pokémon: ${isShiny ? "✨ " : ""}${pokemonName}\n`
+        + `Original Trainer: ${removedPokemon.originalTrainer}\n`
+        + `Total Trades: ${newPokemonData.tradeHistory.length}`;
+      
+      await message.reply(successMessage);
+      
+      // Notify sender
+      try {
+        await message.send(`✅ Your ${isShiny ? "✨ " : ""}${pokemonName} has been traded to ${receiverName}!`, senderID);
+      } catch (e) {
+        console.log("Could not notify sender:", e.message);
+      }
+      
+    } else {
+      // REJECT TRADE
+      const senderName = await usersData.getName(trade.senderID);
+      await message.reply(`❌ Trade rejected!\n\n${senderName}'s offer for ${trade.isShiny ? "✨ " : ""}${trade.pokemonName} has been declined.`);
+      
+      // Notify sender
+      try {
+        await message.send(`❌ ${receiverName} rejected your trade offer for ${trade.isShiny ? "✨ " : ""}${trade.pokemonName}.`, trade.senderID);
+      } catch (e) {
+        console.log("Could not notify sender:", e.message);
+      }
     }
+    
+    // Clean up
+    delete pendingTrades[tradeID];
+    return;
+  }
 
     if (Reply.type === "collectionPage") {
       const key = Reply.key;
