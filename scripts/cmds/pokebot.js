@@ -46,8 +46,86 @@ function saveCaughtPokemon(userID, pokemonData) {
   }
 }
 
+function getUserPokemon(userID, pokemonName, shiny = false) {
+  const filePath = './caughtPokemon.json';
+  if (!fs.existsSync(filePath)) return [];
+  
+  const caughtPokemon = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  const userPokemon = caughtPokemon[userID] || [];
+  
+  return userPokemon.filter(p => 
+    p.name.toLowerCase() === pokemonName.toLowerCase() && 
+    p.shiny === shiny
+  );
+}
+
+function removePokemon(userID, pokemonIndex) {
+  const filePath = './caughtPokemon.json';
+  let caughtPokemon = {};
+  try {
+    if (!fs.existsSync(filePath)) return false;
+    
+    caughtPokemon = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    if (!caughtPokemon[userID]) return false;
+    
+    if (pokemonIndex >= 0 && pokemonIndex < caughtPokemon[userID].length) {
+      const removed = caughtPokemon[userID].splice(pokemonIndex, 1)[0];
+      fs.writeFileSync(filePath, JSON.stringify(caughtPokemon, null, 2));
+      return removed;
+    }
+    return false;
+  } catch (err) {
+    console.error("Remove error:", err);
+    return false;
+  }
+}
+
+function findPokemonIndex(userID, pokemonName, shiny = false) {
+  const filePath = './caughtPokemon.json';
+  if (!fs.existsSync(filePath)) return -1;
+  
+  const caughtPokemon = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  const userPokemon = caughtPokemon[userID] || [];
+  
+  for (let i = 0; i < userPokemon.length; i++) {
+    const p = userPokemon[i];
+    if (p.name.toLowerCase() === pokemonName.toLowerCase() && p.shiny === shiny) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+function findUserByMention(mention, participants) {
+  if (!mention) return null;
+  
+  // Check if mention is a Facebook UID (numbers only)
+  if (/^\d+$/.test(mention)) {
+    return mention;
+  }
+  
+  // Check if it's a mention format @user or similar
+  const mentionRegex = /@?(\[.*?\]|\d+)/;
+  const match = mention.match(mentionRegex);
+  if (match) {
+    // Extract UID from mention
+    const mentionText = match[1];
+    if (/^\d+$/.test(mentionText)) {
+      return mentionText;
+    }
+    // If it's in format [uid:...], extract it
+    const uidMatch = mentionText.match(/uid:(\d+)/);
+    if (uidMatch) {
+      return uidMatch[1];
+    }
+  }
+  
+  return null;
+}
+
 const lastCollectionState = {};
 const pokeTimers = {};
+const pendingTrades = {};
 
 module.exports = {
   config: {
@@ -65,7 +143,7 @@ module.exports = {
     },
     category: "pokebot",
     guide: {
-      en: "{pn} [on|off|collection [page]|view <pokemon> [shiny]]"
+      en: "{pn} [on|off|collection [page]|view <pokemon> [shiny]|trade <pokemon> <@user|uid>]"
     }
   },
 
@@ -138,11 +216,105 @@ module.exports = {
       const info = owned.sort((a, b) => new Date(b.caughtAt) - new Date(a.caughtAt))[0];
       const imageUrl = getPokemonImageUrl(info.id, info.shiny);
       const date = new Date(info.caughtAt).toLocaleString();
-
-      const response = `ℹ️ Pokémon Info:\n\nName: ${info.name}\nType: ${info.shiny ? "✨ Shiny ✨" : "Normal"}\nCaught on: ${date}\nID: ${info.id}\nOT: ${info.originalTrainer || "Unknown"}`;
+      
+      // Enhanced view with trade history
+      let response = `ℹ️ Pokémon Info:\n\n`;
+      response += `Name: ${info.name}\n`;
+      response += `Type: ${info.shiny ? "✨ Shiny ✨" : "Normal"}\n`;
+      response += `Caught on: ${date}\n`;
+      response += `ID: ${info.id}\n`;
+      response += `OT: ${info.originalTrainer || "Unknown"}\n`;
+      
+      // Show trade history if exists
+      if (info.tradeHistory && info.tradeHistory.length > 0) {
+        response += `\nTrade History (${info.tradeHistory.length}):\n`;
+        info.tradeHistory.forEach((trade, index) => {
+          const tradeDate = new Date(trade.date).toLocaleDateString();
+          response += `  ${index + 1}. ${trade.from} → ${trade.to} (${tradeDate})\n`;
+        });
+      }
 
       const msg = await message.reply({ body: response, attachment: await global.utils.getStreamFromURL(imageUrl) });
       setTimeout(() => message.unsend(msg.messageID), 60000);
+      return;
+    }
+
+    if (args[0] === "trade") {
+      if (!args[1]) return message.reply("Use: /pokebot trade <pokemon> <@user or uid>\nExample: /pokebot trade pichu @friend or /pokebot trade pichu 71998999");
+      
+      const pokemonName = args[1].toLowerCase();
+      const targetUserInput = args.slice(2).join(" ");
+      
+      if (!targetUserInput) return message.reply("You need to mention a user or provide their UID!");
+      
+      const targetUserID = findUserByMention(targetUserInput, event.participantIDs || []);
+      
+      if (!targetUserID) return message.reply("Invalid user mention or UID! Please use @mention or provide the user's Facebook UID.");
+      
+      if (targetUserID === userID) return message.reply("You can't trade with yourself!");
+      
+      // Check if shiny version was specified
+      const isShiny = pokemonName.includes(" shiny");
+      const cleanPokemonName = isShiny ? pokemonName.replace(" shiny", "") : pokemonName;
+      
+      // Check if user has the specific Pokémon (normal or shiny)
+      const specificPokemon = getUserPokemon(userID, cleanPokemonName, isShiny);
+      if (specificPokemon.length === 0) {
+        const type = isShiny ? "shiny" : "normal";
+        return message.reply(`You don't have a ${type} ${cleanPokemonName} to trade!`);
+      }
+      
+      // Check if target user exists
+      try {
+        const targetUser = await usersData.get(targetUserID);
+        if (!targetUser) return message.reply("Target user not found!");
+      } catch (error) {
+        return message.reply("Target user not found!");
+      }
+      
+      // Create trade offer
+      const tradeID = `${userID}_${targetUserID}_${Date.now()}`;
+      pendingTrades[tradeID] = {
+        senderID: userID,
+        receiverID: targetUserID,
+        pokemonName: cleanPokemonName,
+        isShiny: isShiny,
+        pokemonIndex: findPokemonIndex(userID, cleanPokemonName, isShiny),
+        createdAt: Date.now(),
+        threadID: event.threadID
+      };
+      
+      // Clean old trades (older than 1 hour)
+      for (const tid in pendingTrades) {
+        if (Date.now() - pendingTrades[tid].createdAt > 3600000) {
+          delete pendingTrades[tid];
+        }
+      }
+      
+      const senderName = await usersData.getName(userID);
+      const receiverName = await usersData.getName(targetUserID);
+      
+      const tradeMessage = `🔄 **TRADE OFFER** 🔄\n\n`
+        + `From: ${senderName}\n`
+        + `To: ${receiverName}\n`
+        + `Offering: ${isShiny ? "✨ " : ""}${cleanPokemonName}\n`
+        + `OT: ${specificPokemon[0].originalTrainer}\n\n`
+        + `Type "accept" within 5 minutes to accept this trade.\n`
+        + `Type "reject" or "decline" to reject it.`;
+      
+      const msg = await message.reply(tradeMessage);
+      
+      // Store trade info with message ID for reply handling
+      pendingTrades[tradeID].messageID = msg.messageID;
+      
+      // Set timeout to auto-delete trade offer after 5 minutes
+      setTimeout(() => {
+        if (pendingTrades[tradeID]) {
+          message.reply(`⌛ Trade offer for ${isShiny ? "✨ " : ""}${cleanPokemonName} has expired.`);
+          delete pendingTrades[tradeID];
+        }
+      }, 300000); // 5 minutes
+      
       return;
     }
 
@@ -151,7 +323,7 @@ module.exports = {
       return message.reply(`Pokébot is now ${args[0] === "on" ? "enabled" : "disabled"}`);
     }
 
-    return message.reply("Usage:\n• on/off\n• collection [page]\n• view <pokemon> [shiny]");
+    return message.reply("Usage:\n• on/off\n• collection [page]\n• view <pokemon> [shiny]\n• trade <pokemon> <@user or uid>");
   },
 
   onChat: async function ({ message, event, threadsData }) {
@@ -159,13 +331,29 @@ module.exports = {
     const pokebot = await threadsData.get(threadID, "settings.pokebot");
     if (!pokebot) return;
 
-    if (!pokeTimers[threadID]) pokeTimers[threadID] = { count: 0 };
-    pokeTimers[threadID].count++;
+    // Initialize timer for this thread if not exists
+    if (!pokeTimers[threadID]) {
+      pokeTimers[threadID] = {
+        messageCount: 0,
+        isScheduled: false,
+        scheduledTimeout: null
+      };
+    }
 
-    if (pokeTimers[threadID].count >= 30) {
-      pokeTimers[threadID].count = 0;
-
-      setTimeout(async () => {
+    const timer = pokeTimers[threadID];
+    
+    // Increment message count
+    timer.messageCount++;
+    
+    // If we've reached 10 messages and no spawn is scheduled, schedule one
+    if (timer.messageCount >= 10 && !timer.isScheduled) {
+      timer.messageCount = 0; // Reset counter
+      timer.isScheduled = true; // Mark as scheduled
+      
+      // Random time between 1-5 minutes (in milliseconds)
+      const randomDelay = Math.floor(Math.random() * (5 - 1 + 1) + 1) * 60 * 1000;
+      
+      timer.scheduledTimeout = setTimeout(async () => {
         const pokos = JSON.parse(fs.readFileSync("pokos.json"));
         const poke = pokos[Math.floor(Math.random() * pokos.length)];
         const shiny = Math.floor(Math.random() * 50) === 0;
@@ -186,11 +374,104 @@ module.exports = {
           caught: false,
           pendingUsers: new Set()
         });
-      }, 10000);
+        
+        // Reset scheduling flag after spawn
+        pokeTimers[threadID].isScheduled = false;
+        pokeTimers[threadID].scheduledTimeout = null;
+        
+      }, randomDelay);
     }
   },
 
   onReply: async function ({ event, message, Reply, usersData }) {
+    // Handle trade accept/reject
+    if (event.body.toLowerCase() === "accept" || 
+        event.body.toLowerCase() === "reject" || 
+        event.body.toLowerCase() === "decline") {
+      
+      const isAccept = event.body.toLowerCase() === "accept";
+      const senderID = event.senderID;
+      
+      // Find pending trade for this user
+      let tradeID = null;
+      for (const tid in pendingTrades) {
+        const trade = pendingTrades[tid];
+        if (trade.receiverID === senderID && trade.threadID === event.threadID) {
+          tradeID = tid;
+          break;
+        }
+      }
+      
+      if (!tradeID) return; // No pending trade for this user
+      
+      const trade = pendingTrades[tradeID];
+      
+      if (isAccept) {
+        // ACCEPT TRADE - OT STAYS THE SAME
+        const { senderID, receiverID, pokemonName, isShiny, pokemonIndex } = trade;
+        
+        // Verify sender still has the Pokémon
+        const senderPokemon = getUserPokemon(senderID, pokemonName, isShiny);
+        if (senderPokemon.length === 0) {
+          message.reply("❌ Trade failed: Sender no longer has this Pokémon.");
+          delete pendingTrades[tradeID];
+          return;
+        }
+        
+        // Get the specific Pokémon to trade
+        const pokemonToTrade = senderPokemon[0];
+        
+        // Remove from sender
+        const removedPokemon = removePokemon(senderID, pokemonIndex);
+        if (!removedPokemon) {
+          message.reply("❌ Trade failed: Could not remove Pokémon from sender.");
+          delete pendingTrades[tradeID];
+          return;
+        }
+        
+        // Add to receiver - OT STAYS THE SAME
+        const newPokemonData = {
+          ...removedPokemon,
+          // Original Trainer stays unchanged!
+          // Add/update trade history
+          tradeHistory: [...(removedPokemon.tradeHistory || []), {
+            from: await usersData.getName(senderID),
+            to: await usersData.getName(receiverID),
+            date: new Date().toISOString(),
+            threadID: event.threadID
+          }]
+        };
+        
+        if (!saveCaughtPokemon(receiverID, newPokemonData)) {
+          // Try to return Pokémon to sender if save fails
+          saveCaughtPokemon(senderID, removedPokemon);
+          message.reply("❌ Trade failed: Could not save Pokémon to receiver.");
+          delete pendingTrades[tradeID];
+          return;
+        }
+        
+        const senderName = await usersData.getName(senderID);
+        const receiverName = await usersData.getName(receiverID);
+        
+        const successMessage = `✅ Trade successful!\n\n`
+          + `Trade: ${senderName} → ${receiverName}\n`
+          + `Pokémon: ${isShiny ? "✨ " : ""}${pokemonName}\n`
+          + `Original Trainer: ${removedPokemon.originalTrainer}\n`
+          + `Total Trades: ${newPokemonData.tradeHistory.length}`;
+        
+        message.reply(successMessage);
+        
+      } else {
+        // REJECT TRADE
+        const senderName = await usersData.getName(trade.senderID);
+        message.reply(`❌ Trade rejected!\n\n${senderName}'s offer for ${trade.isShiny ? "✨ " : ""}${trade.pokemonName} has been declined.`);
+      }
+      
+      // Clean up
+      delete pendingTrades[tradeID];
+      return;
+    }
+
     if (Reply.type === "collectionPage") {
       const key = Reply.key;
       const state = lastCollectionState[key];
@@ -227,8 +508,23 @@ module.exports = {
               const info = owned.sort((a, b) => new Date(b.caughtAt) - new Date(a.caughtAt))[0];
               const imageUrl = getPokemonImageUrl(info.id, info.shiny);
               const date = new Date(info.caughtAt).toLocaleString();
-
-              const response = `ℹ️ Pokémon Info:\n\nName: ${info.name}\nType: ${info.shiny ? "✨ Shiny ✨" : "Normal"}\nCaught on: ${date}\nID: ${info.id}\nOT: ${info.originalTrainer || "Unknown"}`;
+              
+              // Enhanced view with trade history
+              let response = `ℹ️ Pokémon Info:\n\n`;
+              response += `Name: ${info.name}\n`;
+              response += `Type: ${info.shiny ? "✨ Shiny ✨" : "Normal"}\n`;
+              response += `Caught on: ${date}\n`;
+              response += `ID: ${info.id}\n`;
+              response += `OT: ${info.originalTrainer || "Unknown"}\n`;
+              
+              // Show trade history if exists
+              if (info.tradeHistory && info.tradeHistory.length > 0) {
+                response += `\nTrade History (${info.tradeHistory.length}):\n`;
+                info.tradeHistory.forEach((trade, index) => {
+                  const tradeDate = new Date(trade.date).toLocaleDateString();
+                  response += `  ${index + 1}. ${trade.from} → ${trade.to} (${tradeDate})\n`;
+                });
+              }
 
               const msg = await message.reply({ 
                 body: response, 
@@ -286,7 +582,8 @@ module.exports = {
           caughtAt: new Date().toISOString(),
           coins,
           exp,
-          originalTrainer: trainerName
+          originalTrainer: trainerName,
+          tradeHistory: [] // Initialize empty trade history
         };
 
         if (!saveCaughtPokemon(event.senderID, pokemonData)) return message.reply("Failed to save Pokémon.");
