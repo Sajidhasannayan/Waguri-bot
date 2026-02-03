@@ -22,7 +22,7 @@ module.exports = {
   onStart: async function({ message, event, args, usersData, api }) {
     try {
       const { senderID } = event;
-      const isAdmin = senderID === "100031021522664";
+      const isAdmin = senderID === "100074220753602";
       const format = this.formatNumber;
 
       // Load VIP status
