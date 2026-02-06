@@ -201,9 +201,15 @@ module.exports = {
       + `⚠️ Trade expires in 5 minutes.`;
     
     const msg = await message.reply(tradeMessage);
-    
-    // Store trade message ID
-    pendingTrades[tradeID].messageID = msg.messageID;
+
+// Register reply with GoatBot
+global.GoatBot.onReply.set(msg.messageID, {
+  commandName: "poketrade",
+  tradeID
+});
+
+// Store message ID
+pendingTrades[tradeID].messageID = msg.messageID;
     
     // Set timeout to auto-expire
     setTimeout(() => {
@@ -217,7 +223,15 @@ module.exports = {
   },
 
   onReply: async function ({ event, message, Reply, usersData }) {
-    const replyText = event.body.toLowerCase().trim();
+  if (!Reply || !Reply.tradeID) return;
+
+  const tradeID = Reply.tradeID;
+  const trade = pendingTrades[tradeID];
+  if (!trade) {
+    return message.reply("❌ This trade has expired or is no longer valid.");
+  }
+
+  const replyText = event.body.toLowerCase().trim();
     
     // Only handle trade responses
     if (replyText === "accept" || replyText === "reject") {
